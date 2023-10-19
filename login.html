@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./assets/css/login.css"> -->
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+
+    <section class="h-100 gradient-form">
+        <div class=" container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-8 ">
+                    <div class="card rounded-4 text-black content-log-in ">
+                        <div class="row g-0">
+
+                            <div class="col-lg-7 d-flex align-items-center content-left">
+                                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+
+                                    <img src="./assets/img/admin1.png" alt="" class="col-10 admin1-img">
+                                    <img src="./assets/img/admin4.png" alt="" class="col-8 admin2-img">
+                                </div>
+                            </div>
+                            <!-- content -->
+                            <div class="col-lg-5">
+                                <div class="card-body p-md-5 mx-md-4">
+
+                                    <div class="text-center">
+
+                                        <h3 class="mt-1 mb-5 pb-1">Đăng Nhập</h3>
+                                    </div>
+
+                                    <form>
+                                        <!-- <p>Please login to your account</p>  -->
+
+                                        <div class="form-outline mb-4 box-input">
+                                            <i class="fa-solid fa-user-shield icon-ip"></i>
+                                            <input type="text" id="userName" class="form-control"
+                                                placeholder="Tên đăng nhập" />
+
+                                        </div>
+
+                                        <div class="form-outline mb-4 box-input">
+                                            <i class="fa-solid fa-key icon-ip"></i>
+                                            <input type="password" id="passwordInput" class="form-control"
+                                                placeholder="Mật khẩu" />
+                                            <button><i class="fa-regular fa-eye show-password "></i></button>
+                                            <button id="togglePassword"><i
+                                                    class="fa-regular fa-eye-slash show-password "></i></button>
+
+                                        </div>
+
+                                        <div class="text-center pt-1 mb-5 pb-1 help">
+                                            <a class="text-muted " href="#!">Quên mật khẩu?</a>
+                                            <a class="text-muted" href=""><i class="fa-solid fa-circle-question"></i>Trợ
+                                                giúp</a>
+                                            <button class="btn btn-primary btn-block fa-lg  mb-3" type="button"
+                                                id="btn-log-in"><a href="https://www.facebook.com/">Đăng nhập</a>
+                                            </button>
+
+                                        </div>
+
+                                        <!-- <div class="d-flex align-items-center justify-content-center pb-4">
+                                            <p class="mb-0 me-2">Don't have an account?</p>
+                                            <button type="button" class="btn btn-outline-danger">Create new</button>
+                                        </div> -->
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        // begin check input
+        const btnLogIn = document.getElementById("btn-log-in");
+        btnLogIn?.addEventListener("click", function () { 
+            event.preventDefault()
+            var userName = document.getElementById("userName");
+            var passwordInput = document.getElementById("passwordInput");
+            if (userName.value == "" && passwordInput.value == "") {
+                alert("Vui lòng nhập đầy đủ thông tin");
+            }
+            else if (userName.value == "") {
+                alert("Vui lòng nhập tên tài khoản");
+            } else if (passwordInput.value == "") {
+                alert("Vui lòng nhập mật khẩu");
+            }
+            else {
+                alert("Đăng nhập thành công");
+                window.location.href ='/index.html';
+            }
+        });
+        // end check input
+        // begin show password
+        const inputPwd = document.getElementById("passwordInput");
+        const btnIcon = document.getElementById("togglePassword");
+        btnIcon?.addEventListener("click", function (event) {
+            event.preventDefault(); // Ngăn chặn sự kiện mặc định của nút
+            const inputType = inputPwd?.getAttribute("type");
+            inputPwd?.setAttribute(
+                "type",
+                inputType === "password" ? "text" : "password"
+            );
+            const icons = this.children;
+            [...icons]?.forEach((item) => item.classList.toggle("fa-eye"));
+        });
+
+
+        // end show password
+    </script>
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+body {
+    /* background: #eee; */
+    background-color: #cfe7f9;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#side_nav {
+
+    background: #18458e;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+    z-index: 3;
+    position: fixed;
+    height: 100vh;
+
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+hr.h-color {
+    background: #eee;
+}
+
+.sidebar li.active {
+    background: #eee;
+    border-radius: 8px;
+}
+
+.sidebar li.active a,
+.sidebar li.active a:hover {
+    color: #000;
+}
+
+.sidebar li a {
+    color: #fff;
+}
+
+@media(max-width: 767px) {
+    #side_nav {
+        margin-left: -250px;
+        position: absolute;
+        min-height: 100vh;
+        z-index: 1;
+
+    }
+
+    #side_nav.active {
+        margin-left: 0;
+    }
+}
+
+@media(min-width: 768px) {
+    .dashboard-content {
+        margin-left: 250px;
+    }
+}
+
+.header-nav {
+    position: fixed;
+    width: 100%;
+}
+
+.table-content {
+    background-color: #fff;
+    height: 100vh;
+    margin: 30px 0;
+}
+
+
+
+/* CSS for aligning text in the sidebar menu */
+.sidebar ul li i{
+    min-width: 50px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
