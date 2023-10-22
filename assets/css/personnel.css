@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    /* background: #eee; */
+    background-color: #cfe7f9;
+    font-family: 'Poppins', sans-serif;
+
+}
+:root{
+    --btn-color: #206eeb;
+    --btn-hover: #18458e;
+}
+#side_nav {
+
+    background: #18458e;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+    z-index: 11;
+    position: fixed;
+    height: 100vh;
+
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+hr.h-color {
+    background: #eee;
+}
+
+.sidebar li.active {
+    background: #eee;
+    border-radius: 8px;
+}
+
+.sidebar li.active a,
+.sidebar li.active a:hover {
+    color: #000;
+}
+
+.sidebar li a {
+    color: #fff;
+}
+
+@media(max-width: 767px) {
+    #side_nav {
+        margin-left: -250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 11;
+
+    }
+    
+    #side_nav.active {
+        margin-left: 0;
+    }
+    .btn-search{
+        margin-left: -3%;
+    }
+    #btnAdd>p{
+        display: none;
+    }
+    #btnAdd{
+        padding: 5px 10px;
+    } 
+    #btnAdd i{
+        font-size: 20px;
+    }
+    .modal-content{
+        left: 0;
+    }
+    .modal-dialog{
+        left: 50px;
+        width: 68%;
+    }
+    .controlNewPersonnel>div{
+        width: 90%;
+    }
+}
+
+@media(min-width: 768px) {
+    .dashboard-content {
+        margin-left: 250px;
+    }
+}
+
+.header-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+/* file */
+.file {
+    margin-top: 48px;
+    display: flex;
+}
+.upfile , .downfile{
+    padding: 10px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.upfile , .downfile:hover{
+    cursor: pointer;
+}
+
+/* begin box table */
+.table-content {
+    background-color: #fff;
+    width: 100% !important;
+    margin: 10px 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 600px;
+    min-width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.table-content table tr td button {
+    background: none;
+}
+.table-content table tr td button:hover{
+    text-decoration:underline;
+}
+.table-content table{
+    /* margin-top: 25px; */
+    font-size: 17px;
+    /* margin-top: 20px ; */
+}
+
+/* search */
+#searchInput{
+    padding: 5px 25px;
+    margin: 10px 0 10px 20px ;
+    border-radius:20px;
+    border:1px solid rgba(0, 0, 0, 0.1);
+
+}
+#searchInput:focus{
+    border:1px solid rgba(0, 0, 0, 0.3);
+}
+.settingPersonnel{
+    position: relative ;
+    padding: 20px;
+}
+
+.btn-search{
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 5px 15px;
+    background: rgba(0, 0, 0, 0);
+    left: 31%;
+    border-radius: 0 20px 20px 0;
+    
+}
+.fa-magnifying-glass{
+    font-size: 18px;
+}
+
+/* btn sort */
+#dropdownMenuButton1{
+    border: none;
+    background: #d9d9d9;
+    color: #000;
+    position: absolute;
+    left: 40%;
+    /* transform: translateX(-50%); */
+    top: -45px;
+}
+
+/* btn add */
+.btn-add{
+    display: flex;
+    justify-self: center;
+    right: 0;
+    border: none;
+    padding: 16px 15px 0 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:var(--btn-color);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+
+}
+.btn-add:hover{
+    background-color: var(--btn-hover);
+    color: #fff;
+}
+.fa-user-plus{
+    padding: 5px;
+}
+
+/* end box table */
+
+/* pagination */
+#pagination{
+    display: flex;
+    align-self: center;
+    margin-bottom: 20px;
+    float: right;
+
+}
+#pagination button {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+
+/* CSS for aligning text in the sidebar menu */
+.sidebar ul li i{
+    min-width: 50px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* pop up */
+.btn-close{
+    right: 10px;
+    position: absolute;
+}
+.modal-content{
+    left: -25%;
+    top: 100px;
+    width: 150%;
+    animation: modalFadeIn ease .3s ;
+}
+.btn-danger , .btn-create{
+    background-color: var(--btn-color);
+    border: none;
+    color: #fff;
+}
+.btn-danger:hover{
+    background-color: var(--btn-hover);
+}
+.btn-create:hover{
+    background-color: var(--btn-hover);
+    color: #fff;
+}

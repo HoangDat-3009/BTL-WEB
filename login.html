@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log In</title>
     <!-- bootstrap link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- <link rel="stylesheet" href="./assets/css/login.css"> -->
@@ -65,16 +64,10 @@
                                             <a class="text-muted" href=""><i class="fa-solid fa-circle-question"></i>Trợ
                                                 giúp</a>
                                             <button class="btn btn-primary btn-block fa-lg  mb-3" type="button"
-                                                id="btn-log-in"><a href="https://www.facebook.com/">Đăng nhập</a>
+                                                id="btn-log-in"><a href="index.html">Đăng nhập</a>
                                             </button>
 
                                         </div>
-
-                                        <!-- <div class="d-flex align-items-center justify-content-center pb-4">
-                                            <p class="mb-0 me-2">Don't have an account?</p>
-                                            <button type="button" class="btn btn-outline-danger">Create new</button>
-                                        </div> -->
-
                                     </form>
 
                                 </div>
@@ -88,44 +81,7 @@
 
 
 
-    <script>
-        // begin check input
-        const btnLogIn = document.getElementById("btn-log-in");
-        btnLogIn?.addEventListener("click", function () { 
-            event.preventDefault()
-            var userName = document.getElementById("userName");
-            var passwordInput = document.getElementById("passwordInput");
-            if (userName.value == "" && passwordInput.value == "") {
-                alert("Vui lòng nhập đầy đủ thông tin");
-            }
-            else if (userName.value == "") {
-                alert("Vui lòng nhập tên tài khoản");
-            } else if (passwordInput.value == "") {
-                alert("Vui lòng nhập mật khẩu");
-            }
-            else {
-                alert("Đăng nhập thành công");
-                window.location.href ='/index.html';
-            }
-        });
-        // end check input
-        // begin show password
-        const inputPwd = document.getElementById("passwordInput");
-        const btnIcon = document.getElementById("togglePassword");
-        btnIcon?.addEventListener("click", function (event) {
-            event.preventDefault(); // Ngăn chặn sự kiện mặc định của nút
-            const inputType = inputPwd?.getAttribute("type");
-            inputPwd?.setAttribute(
-                "type",
-                inputType === "password" ? "text" : "password"
-            );
-            const icons = this.children;
-            [...icons]?.forEach((item) => item.classList.toggle("fa-eye"));
-        });
-
-
-        // end show password
-    </script>
+    <script src="./assets/javascript/login.js"></script>
 
 
 
