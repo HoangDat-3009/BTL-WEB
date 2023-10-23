@@ -106,6 +106,7 @@ hr.h-color {
     margin-top: 48px;
     display: flex;
 }
+
 .upfile , .downfile{
     padding: 10px;
     font-size: 18px;
@@ -144,7 +145,6 @@ hr.h-color {
     margin: 10px 0 10px 20px ;
     border-radius:20px;
     border:1px solid rgba(0, 0, 0, 0.1);
-
 }
 #searchInput:focus{
     border:1px solid rgba(0, 0, 0, 0.3);

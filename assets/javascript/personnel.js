@@ -131,6 +131,7 @@ input.addEventListener("input", function () {
       row.style.display = "none";
     }
   }
+  
 });
 // end of search informationPersonnel
 // sort

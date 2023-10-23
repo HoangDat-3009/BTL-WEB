@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+body {
+    /* background: #eee; */
+    background-color: #cfe7f9;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#side_nav {
+
+    background: #18458e;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+    z-index: 3;
+    position: fixed;
+    height: 100vh;
+
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+hr.h-color {
+    background: #eee;
+}
+
+.sidebar li.active {
+    background: #eee;
+    border-radius: 8px;
+}
+
+.sidebar li.active a,
+.sidebar li.active a:hover {
+    color: #000;
+}
+
+.sidebar li a {
+    color: #fff;
+}
+
+@media(max-width: 767px) {
+    #side_nav {
+        margin-left: -250px;
+        position: absolute;
+        min-height: 100vh;
+        z-index: 1;
+
+    }
+
+    #side_nav.active {
+        margin-left: 0;
+    }
+    
+}
+
+@media(min-width: 768px) {
+    .dashboard-content {
+        margin-left: 250px;
+    }
+}
+@media(max-width:992px){
+    .noteTimekeeping{
+        width: 100%;
+    }
+    .setTime{
+        width: 100%;
+        margin: 0%;
+    }
+
+}
+.header-nav {
+    position: fixed;
+    width: 100%;
+}
+
+/* CSS for aligning text in the sidebar menu */
+.sidebar ul li i{
+    min-width: 50px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+.dashboard-content{
+    margin-top: 50px;
+}
+.setTime{
+    background-color: #fff;
+    height: 50vh;
+    margin-right: 8.33333%;
+    padding: 20px;
+}
+.noteTimekeeping{
+    background-color:#fff;
+    height: 50vh;
+
+}
+.table-content {
+    background-color: #fff;
+    width: 100% !important;
+    margin: 10px 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 600px;
+    min-width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+/* search */
+#searchInput{
+    padding: 5px 25px;
+    margin: 10px 0 10px 20px ;
+    border-radius:20px;
+    border:1px solid rgba(0, 0, 0, 0.1);
+}
+#searchInput:focus{
+    border:1px solid rgba(0, 0, 0, 0.3);
+}
+.search-box{
+    position: relative ;
+    padding: 20px;
+}
+
+.btn-search{
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 5px 15px;
+    background: rgba(0, 0, 0, 0);
+    left: 31%;
+    border-radius: 0 20px 20px 0;
+    
+}
+.fa-magnifying-glass{
+    font-size: 18px;
+}
+/*  */
+.file{
+    margin-top: 25px;
+    /* width: 1200px; */
+}
+.upfile,.downfile{
+    padding: 10px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.upfile,.downfile:hover{
+    cursor: pointer;
+}
+/* pagination */
+#pagination{
+    display: flex;
+    align-self: center;
+    margin-bottom: 20px;
+    float: right;
+
+}
+#pagination button {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 13px;
+    border-radius: 5px;
+}

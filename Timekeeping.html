@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <title>Sun</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+  <!-- font awesome link -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+  <link rel="stylesheet" href="./Font-Awesome-640/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/timekeeping.css">
+</head>
+
+<body>
+  <div class="main-container d-flex">
+    <div class="sidebar" id="side_nav">
+      <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
+        <h1 class="fs-4"><span class="bg-white text-dark rounded shadow px-2 me-2">S</span> <span class="text-white">Sun
+          </span></h1>
+        <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i
+            class="fa-solid fa-bars-staggered"></i></button>
+      </div>
+
+      <ul class="list-unstyled px-2">
+        <li class="active"><a href="" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-house"></i>
+            Trang chủ</a></li>
+        <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
+              class="fa-solid fa-clipboard-list-check"></i> Đơn hàng</a></li>
+        <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block d-flex justify-content-between">
+            <span><i class="fa-solid fa-users-line"></i> Khách hàng</span>
+            <!-- <span class="bg-dark rounded-pill text-white py-0 px-2">02</span> -->
+          </a>
+        </li>
+        <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
+              class="fa-regular fa-users-gear"></i></i> Nhân viên</a></li>
+        <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
+              class="fa-solid fa-chart-line-up"></i> Báo cáo</a></li>
+      </ul>
+      <hr class="h-color mx-2">
+
+      <ul class="list-unstyled px-2">
+        <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
+              class="fa-solid fa-bars-progress"></i>
+            Settings</a></li>
+        <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-bell"></i>
+            Notifications</a></li>
+
+      </ul>
+
+    </div>
+    <div class="content">
+      <nav class="navbar navbar-expand-md navbar-light bg-light header-nav">
+        <div class="container-fluid ">
+          <div class="d-flex justify-content-between d-md-none d-block">
+            <button class="btn px-1 py-0 open-btn me-2"><i class="fa-solid fa-bars-staggered"></i></button>
+            <a class="navbar-brand fs-4" href="#"><span class="bg-dark rounded px-2 py-0 text-white">S</span></a>
+
+          </div>
+          <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Profile</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+      <div class="dashboard-content px-3 pt-4">
+        <!-- content -->
+        <div class="row justify-content-center">
+          <div class="col-md-5 setTime rounded-4">
+            <label>Thời gian chấm công</label>
+
+            <form action="">
+              <div>
+                <label for="">Thay đổi giờ</label> <br>
+                <label for="">Từ:</label>
+                <input type="time" name="" id="" class="col-4">
+                <label for="">Đến:</label>
+                <input type="time" name="" id="" class="col-4">
+              </div>
+
+              <div>
+                <label for="">Từ:</label>
+                <input type="date" name="" id="" class="col-4">
+                <label for="">Đến:</label>
+                <input type="date" name="" id="" class="col-4">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5 rounded-4 noteTimekeeping">
+
+          </div>
+          <div class="file d-flex">
+            <div class="upfile">
+              <i class="fa-solid fa-file-import"></i> Nhập File
+            </div>
+            <div class="downfile">
+              <i class="fa-solid fa-file-export"></i> Xuất File
+            </div>
+          </div>
+          <div class="col-md-11 table-content rounded-4 ">
+            <div class="search-box">
+              <input type="text" id="searchInput" placeholder="Tìm kiếm nhân viên,ngày,..." class="col-4  ">
+                <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <table class="table table-striped table-hover table-responsive" id="informationPersonnel">
+              <thead>
+                <tr>
+                  <th class="col">STT</th>
+                  <th class="col">MNV</th>
+                  <th class="col">Tên</th>
+                  <th class="col">Ngày</th>
+                  <th class="col">Giờ vào</th>
+                  <th class="col">Giờ về</th>
+                  <th class="col">Ghi chú</th>
+                </tr>
+              </thead>
+              <tbody id="data-table">
+                <tr>
+                  <td>1</td>
+                  <td>S0001</td>
+                  <td>Nguyễn Hoàng Đạt</td>
+                  <td>10/10/2023</td>
+                  <td>7:50 AM</td>
+                  <td>8:40 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>S0002</td>
+                  <td>Trần Thuỳ Dương</td>
+                  <td>10/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>8:45 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>S0003</td>
+                  <td>Nguyễn Duy Biền</td>
+                  <td>10/10/2023</td>
+                  <td>7:55 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>S0004</td>
+                  <td>Nguyễn Trần Hải Đăng</td>
+                  <td>10/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>S0005</td>
+                  <td>Vương Đức Hùng</td>
+                  <td>10/10/2023</td>
+                  <td>7:48 AM</td>
+                  <td>5:44 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>S0006</td>
+                  <td>Nguyễn Tuấn Cường</td>
+                  <td>10/10/2023</td>
+                  <td>7:57 AM</td>
+                  <td>5:35 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>S0007</td>
+                  <td>Trần Văn Đông</td>
+                  <td>10/10/2023</td>
+                  <td>7:35 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>S0008</td>
+                  <td>Trần Mạnh Khoa</td>
+                  <td>10/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>S0009</td>
+                  <td>Nguyễn Văn Đức</td>
+                  <td>10/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ khám bệnh</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>S0010</td>
+                  <td>Nguyễn Ngọc Diễm</td>
+                  <td>10/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>S0011</td>
+                  <td>Trần Thị Hoa</td>
+                  <td>10/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>8:45 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>S0012</td>
+                  <td>Nguyễn Thị Ngọc</td>
+                  <td>10/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>S0013</td>
+                  <td>Đoàn Văn Thanh</td>
+                  <td>10/10/2023</td>
+                  <td>7:50 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>S0014</td>
+                  <td>Nguyễn Văn Hảo</td>
+                  <td>10/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ ốm</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>S0015</td>
+                  <td>Bùi Văn Thanh</td>
+                  <td>10/10/2023</td>
+                  <td>7:52 AM</td>
+                  <td>5:31 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>S0016</td>
+                  <td>Tạ Tấn Trung</td>
+                  <td>10/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>S0017</td>
+                  <td>Trương Đức Anh</td>
+                  <td>10/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ không phép</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>S0001</td>
+                  <td>Nguyễn Hoàng Đạt</td>
+                  <td>09/10/2023</td>
+                  <td>7:50 AM</td>
+                  <td>8:40 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>S0002</td>
+                  <td>Trần Thuỳ Dương</td>
+                  <td>09/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>8:45 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>S0003</td>
+                  <td>Nguyễn Duy Biền</td>
+                  <td>09/10/2023</td>
+                  <td>7:55 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td>S0004</td>
+                  <td>Nguyễn Trần Hải Đăng</td>
+                  <td>09/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>S0005</td>
+                  <td>Vương Đức Hùng</td>
+                  <td>09/10/2023</td>
+                  <td>7:48 AM</td>
+                  <td>5:44 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>23</td>
+                  <td>S0006</td>
+                  <td>Nguyễn Tuấn Cường</td>
+                  <td>09/10/2023</td>
+                  <td>7:57 AM</td>
+                  <td>5:35 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>S0007</td>
+                  <td>Trần Văn Đông</td>
+                  <td>09/10/2023</td>
+                  <td>7:35 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>S0008</td>
+                  <td>Trần Mạnh Khoa</td>
+                  <td>09/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>S0009</td>
+                  <td>Nguyễn Văn Đức</td>
+                  <td>09/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ khám bệnh</td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>S0010</td>
+                  <td>Nguyễn Ngọc Diễm</td>
+                  <td>09/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>28</td>
+                  <td>S0011</td>
+                  <td>Trần Thị Hoa</td>
+                  <td>09/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>8:45 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>29</td>
+                  <td>S0012</td>
+                  <td>Nguyễn Thị Ngọc</td>
+                  <td>09/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>30</td>
+                  <td>S0013</td>
+                  <td>Đoàn Văn Thanh</td>
+                  <td>09/10/2023</td>
+                  <td>7:50 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td>S0014</td>
+                  <td>Nguyễn Văn Hảo</td>
+                  <td>09/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ ốm</td>
+                </tr>
+                <tr>
+                  <td>32</td>
+                  <td>S0015</td>
+                  <td>Bùi Văn Thanh</td>
+                  <td>09/10/2023</td>
+                  <td>7:52 AM</td>
+                  <td>5:31 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>33</td>
+                  <td>S0016</td>
+                  <td>Tạ Tấn Trung</td>
+                  <td>09/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>34</td>
+                  <td>S0017</td>
+                  <td>Trương Đức Anh</td>
+                  <td>09/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ không phép</td>
+                </tr>
+                <tr>
+                  <td>35</td>
+                  <td>S0001</td>
+                  <td>Nguyễn Hoàng Đạt</td>
+                  <td>08/10/2023</td>
+                  <td>7:50 AM</td>
+                  <td>8:40 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>36</td>
+                  <td>S0002</td>
+                  <td>Trần Thuỳ Dương</td>
+                  <td>08/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>8:45 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>37</td>
+                  <td>S0003</td>
+                  <td>Nguyễn Duy Biền</td>
+                  <td>08/10/2023</td>
+                  <td>7:55 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>38</td>
+                  <td>S0004</td>
+                  <td>Nguyễn Trần Hải Đăng</td>
+                  <td>08/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>39</td>
+                  <td>S0005</td>
+                  <td>Vương Đức Hùng</td>
+                  <td>08/10/2023</td>
+                  <td>7:48 AM</td>
+                  <td>5:44 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>40</td>
+                  <td>S0006</td>
+                  <td>Nguyễn Tuấn Cường</td>
+                  <td>08/10/2023</td>
+                  <td>7:57 AM</td>
+                  <td>5:35 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>41</td>
+                  <td>S0007</td>
+                  <td>Trần Văn Đông</td>
+                  <td>08/10/2023</td>
+                  <td>7:35 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>42</td>
+                  <td>S0008</td>
+                  <td>Trần Mạnh Khoa</td>
+                  <td>08/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>43</td>
+                  <td>S0009</td>
+                  <td>Nguyễn Văn Đức</td>
+                  <td>08/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ khám bệnh</td>
+                </tr>
+                <tr>
+                  <td>44</td>
+                  <td>S0010</td>
+                  <td>Nguyễn Ngọc Diễm</td>
+                  <td>08/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>45</td>
+                  <td>S0011</td>
+                  <td>Trần Thị Hoa</td>
+                  <td>08/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>8:45 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>46</td>
+                  <td>S0012</td>
+                  <td>Nguyễn Thị Ngọc</td>
+                  <td>08/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>47</td>
+                  <td>S0013</td>
+                  <td>Đoàn Văn Thanh</td>
+                  <td>08/10/2023</td>
+                  <td>7:50 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>48</td>
+                  <td>S0014</td>
+                  <td>Nguyễn Văn Hảo</td>
+                  <td>08/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ ốm</td>
+                </tr>
+                <tr>
+                  <td>49</td>
+                  <td>S0015</td>
+                  <td>Bùi Văn Thanh</td>
+                  <td>08/10/2023</td>
+                  <td>7:52 AM</td>
+                  <td>5:31 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>50</td>
+                  <td>S0016</td>
+                  <td>Tạ Tấn Trung</td>
+                  <td>08/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>51</td>
+                  <td>S0017</td>
+                  <td>Trương Đức Anh</td>
+                  <td>08/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ không phép</td>
+                </tr>
+                <tr>
+                  <td>52</td>
+                  <td>S0001</td>
+                  <td>Nguyễn Hoàng Đạt</td>
+                  <td>07/10/2023</td>
+                  <td>7:50 AM</td>
+                  <td>8:40 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>53</td>
+                  <td>S0002</td>
+                  <td>Trần Thuỳ Dương</td>
+                  <td>07/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>8:45 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>54</td>
+                  <td>S0003</td>
+                  <td>Nguyễn Duy Biền</td>
+                  <td>07/10/2023</td>
+                  <td>7:55 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>55</td>
+                  <td>S0004</td>
+                  <td>Nguyễn Trần Hải Đăng</td>
+                  <td>07/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>56</td>
+                  <td>S0005</td>
+                  <td>Vương Đức Hùng</td>
+                  <td>07/10/2023</td>
+                  <td>7:48 AM</td>
+                  <td>5:44 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>57</td>
+                  <td>S0006</td>
+                  <td>Nguyễn Tuấn Cường</td>
+                  <td>07/10/2023</td>
+                  <td>7:57 AM</td>
+                  <td>5:35 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>58</td>
+                  <td>S0007</td>
+                  <td>Trần Văn Đông</td>
+                  <td>07/10/2023</td>
+                  <td>7:35 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>59</td>
+                  <td>S0008</td>
+                  <td>Trần Mạnh Khoa</td>
+                  <td>07/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>60</td>
+                  <td>S0009</td>
+                  <td>Nguyễn Văn Đức</td>
+                  <td>07/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ khám bệnh</td>
+                </tr>
+                <tr>
+                  <td>61</td>
+                  <td>S0010</td>
+                  <td>Nguyễn Ngọc Diễm</td>
+                  <td>07/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>62</td>
+                  <td>S0011</td>
+                  <td>Trần Thị Hoa</td>
+                  <td>07/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>8:45 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>63</td>
+                  <td>S0012</td>
+                  <td>Nguyễn Thị Ngọc</td>
+                  <td>07/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>64</td>
+                  <td>S0013</td>
+                  <td>Đoàn Văn Thanh</td>
+                  <td>07/10/2023</td>
+                  <td>7:50 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>65</td>
+                  <td>S0014</td>
+                  <td>Nguyễn Văn Hảo</td>
+                  <td>07/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ ốm</td>
+                </tr>
+                <tr>
+                  <td>66</td>
+                  <td>S0015</td>
+                  <td>Bùi Văn Thanh</td>
+                  <td>07/10/2023</td>
+                  <td>7:52 AM</td>
+                  <td>5:31 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>67</td>
+                  <td>S0016</td>
+                  <td>Tạ Tấn Trung</td>
+                  <td>07/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>68</td>
+                  <td>S0017</td>
+                  <td>Trương Đức Anh</td>
+                  <td>07/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ không phép</td>
+                </tr>
+                <tr>
+                  <td>69</td>
+                  <td>S0001</td>
+                  <td>Nguyễn Hoàng Đạt</td>
+                  <td>06/10/2023</td>
+                  <td>7:50 AM</td>
+                  <td>8:40 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>70</td>
+                  <td>S0002</td>
+                  <td>Trần Thuỳ Dương</td>
+                  <td>06/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>8:45 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>71</td>
+                  <td>S0003</td>
+                  <td>Nguyễn Duy Biền</td>
+                  <td>06/10/2023</td>
+                  <td>7:55 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>72</td>
+                  <td>S0004</td>
+                  <td>Nguyễn Trần Hải Đăng</td>
+                  <td>06/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>73</td>
+                  <td>S0005</td>
+                  <td>Vương Đức Hùng</td>
+                  <td>06/10/2023</td>
+                  <td>7:48 AM</td>
+                  <td>5:44 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>74</td>
+                  <td>S0006</td>
+                  <td>Nguyễn Tuấn Cường</td>
+                  <td>06/10/2023</td>
+                  <td>7:57 AM</td>
+                  <td>5:35 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>75</td>
+                  <td>S0007</td>
+                  <td>Trần Văn Đông</td>
+                  <td>06/10/2023</td>
+                  <td>7:35 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>76</td>
+                  <td>S0008</td>
+                  <td>Trần Mạnh Khoa</td>
+                  <td>06/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>77</td>
+                  <td>S0009</td>
+                  <td>Nguyễn Văn Đức</td>
+                  <td>06/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ khám bệnh</td>
+                </tr>
+                <tr>
+                  <td>78</td>
+                  <td>S0010</td>
+                  <td>Nguyễn Ngọc Diễm</td>
+                  <td>06/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>79</td>
+                  <td>S0011</td>
+                  <td>Trần Thị Hoa</td>
+                  <td>06/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>8:45 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>80</td>
+                  <td>S0012</td>
+                  <td>Nguyễn Thị Ngọc</td>
+                  <td>06/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>81</td>
+                  <td>S0013</td>
+                  <td>Đoàn Văn Thanh</td>
+                  <td>06/10/2023</td>
+                  <td>7:50 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>82</td>
+                  <td>S0014</td>
+                  <td>Nguyễn Văn Hảo</td>
+                  <td>06/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ ốm</td>
+                </tr>
+                <tr>
+                  <td>83</td>
+                  <td>S0015</td>
+                  <td>Bùi Văn Thanh</td>
+                  <td>06/10/2023</td>
+                  <td>7:52 AM</td>
+                  <td>5:31 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>84</td>
+                  <td>S0016</td>
+                  <td>Tạ Tấn Trung</td>
+                  <td>06/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>85</td>
+                  <td>S0017</td>
+                  <td>Trương Đức Anh</td>
+                  <td>06/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ không phép</td>
+                </tr>
+                <tr>
+                  <td>86</td>
+                  <td>S0001</td>
+                  <td>Nguyễn Hoàng Đạt</td>
+                  <td>05/10/2023</td>
+                  <td>7:50 AM</td>
+                  <td>8:40 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>87</td>
+                  <td>S0002</td>
+                  <td>Trần Thuỳ Dương</td>
+                  <td>05/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>8:45 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>88</td>
+                  <td>S0003</td>
+                  <td>Nguyễn Duy Biền</td>
+                  <td>05/10/2023</td>
+                  <td>7:55 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>89</td>
+                  <td>S0004</td>
+                  <td>Nguyễn Trần Hải Đăng</td>
+                  <td>05/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>90</td>
+                  <td>S0005</td>
+                  <td>Vương Đức Hùng</td>
+                  <td>05/10/2023</td>
+                  <td>7:48 AM</td>
+                  <td>5:44 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>91</td>
+                  <td>S0006</td>
+                  <td>Nguyễn Tuấn Cường</td>
+                  <td>05/10/2023</td>
+                  <td>7:57 AM</td>
+                  <td>5:35 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>92</td>
+                  <td>S0007</td>
+                  <td>Trần Văn Đông</td>
+                  <td>05/10/2023</td>
+                  <td>7:35 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>93</td>
+                  <td>S0008</td>
+                  <td>Trần Mạnh Khoa</td>
+                  <td>05/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>5:45 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>94</td>
+                  <td>S0009</td>
+                  <td>Nguyễn Văn Đức</td>
+                  <td>05/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ khám bệnh</td>
+                </tr>
+                <tr>
+                  <td>95</td>
+                  <td>S0010</td>
+                  <td>Nguyễn Ngọc Diễm</td>
+                  <td>05/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>96</td>
+                  <td>S0011</td>
+                  <td>Trần Thị Hoa</td>
+                  <td>05/10/2023</td>
+                  <td>7:40 AM</td>
+                  <td>8:45 PM</td>
+                  <td>Tăng ca</td>
+                </tr>
+                <tr>
+                  <td>97</td>
+                  <td>S0012</td>
+                  <td>Nguyễn Thị Ngọc</td>
+                  <td>05/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>98</td>
+                  <td>S0013</td>
+                  <td>Đoàn Văn Thanh</td>
+                  <td>05/10/2023</td>
+                  <td>7:50 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>99</td>
+                  <td>S0014</td>
+                  <td>Nguyễn Văn Hảo</td>
+                  <td>05/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ ốm</td>
+                </tr>
+                <tr>
+                  <td>100</td>
+                  <td>S0015</td>
+                  <td>Bùi Văn Thanh</td>
+                  <td>05/10/2023</td>
+                  <td>7:52 AM</td>
+                  <td>5:31 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>101</td>
+                  <td>S0016</td>
+                  <td>Tạ Tấn Trung</td>
+                  <td>05/10/2023</td>
+                  <td>7:59 AM</td>
+                  <td>5:30 PM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>102</td>
+                  <td>S0017</td>
+                  <td>Trương Đức Anh</td>
+                  <td>05/10/2023</td>
+                  <td>--:--</td>
+                  <td>--:--</td>
+                  <td>Nghỉ không phép</td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="pagination">
+              <button id="first-page">Trang đầu</button>
+              <button id="previous-page">Trước</button>
+              <div id="page-buttons">
+
+              </div>
+              <button id="next-page">Tiếp</button>
+              <button id="last-page">Trang cuối</button>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(".sidebar ul li").on('click', function () {
+      $(".sidebar ul li.active").removeClass('active');
+      $(this).addClass('active');
+    });
+
+    $('.open-btn').on('click', function () {
+      $('.sidebar').addClass('active');
+
+    });
+
+
+    $('.close-btn').on('click', function () {
+      $('.sidebar').removeClass('active');
+
+    })
+  </script>
+  <script src="./assets/javascript/timekeeping.js"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
