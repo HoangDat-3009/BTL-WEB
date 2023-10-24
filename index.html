@@ -1,128 +1,298 @@
-<!doctype html>
-<html lang="vi">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Sun</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
 
-    <!-- bootstrap link -->
+    <!-- Box Icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Styles  -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<!-- bootstrap link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
-    <!-- font awesome link -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
-    <link rel="stylesheet" href="./Font-Awesome-640/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
-
 </head>
 
 <body>
-    <div class="main-container d-flex">
-        <div class="sidebar" id="side_nav">
-            <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
-                <h1 class="fs-4"><span class="bg-white text-dark rounded shadow px-2 me-2">S</span> <span
-                        class="text-white">Sun </span></h1>
-                <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i
-                        class="fa-solid fa-bars-staggered"></i></button>
-            </div>
+    <div class="sidebar close">
+        <!-- ========== Logo ============  -->
+        <a href="#" class="logo-box">
+            <i class='bx bxl-xing'></i>
+            <div class="logo-name">UTC Express</div>
+        </a>
 
-            <ul class="list-unstyled px-2">
-                <li class="active"><a href="" class="text-decoration-none px-3 py-2 d-block"><i
-                            class="fa-solid fa-house"></i> Trang chủ</a></li>
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-clipboard-list-check"></i> Đơn hàng</a></li>
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block d-flex justify-content-between">
-                        <span><i class="fa-solid fa-users-line"></i> Khách hàng</span>
-                        <!-- <span class="bg-dark rounded-pill text-white py-0 px-2">02</span> -->
+        <!-- ========== List ============  -->
+        <ul class="sidebar-list">
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li>
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="name">Trang chủ</span>
                     </a>
-                </li>
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-regular fa-users-gear"></i></i> Nhân viên</a></li>
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-chart-line-up"></i> Báo cáo</a></li>
-            </ul>
-            <hr class="h-color mx-2">
-
-            <ul class="list-unstyled px-2">
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
-                            class="fa-solid fa-bars-progress"></i>
-                        Settings</a></li>
-                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-bell"></i>
-                        Notifications</a></li>
-
-            </ul>
-
-        </div>
-        <div class="content">
-            <nav class="navbar navbar-expand-md navbar-light bg-light header-nav">
-                <div class="container-fluid ">
-                    <div class="d-flex justify-content-between d-md-none d-block">
-                        <button class="btn px-1 py-0 open-btn me-2"><i class="fa-solid fa-bars-staggered"></i></button>
-                        <a class="navbar-brand fs-4" href="#"><span
-                                class="bg-dark rounded px-2 py-0 text-white">S</span></a>
-
-                    </div>
-                    <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Profile</a>
-                            </li>
-
-                        </ul>
-
-                    </div>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
                 </div>
-            </nav>
-
-            <div class="dashboard-content px-3 pt-4">
-                <!-- content -->
-                <div class="row justify-content-center">
-                    <div class="col-md-6" style="background-color: aqua;height: 50vh;">
-
-                    </div>
-                    <div class="col-md-6" style="background-color:aquamarine;height: 50vh;">
-
-                    </div>
-                    <div class="col-md-11 table-content rounded-4">
-
-                    </div>
-
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Trang chủ</a>
+                    <!-- submenu links here  -->
                 </div>
+            </li>
 
+            <!-- -------- Dropdown List Item ------- -->
+            <li class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-collection'></i>
+                        <span class="name">Đơn hàng</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Đơn hàng</a>
+                    <a href="#" class="link">Tạo đơn mới</a>
+                    <a href="#" class="link">Xác nhận đơn hàng</a>
+                </div>
+            </li>
 
-            </div>
-        </div>
+            <!-- -------- Dropdown List Item ------- -->
+            <li class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="name">Khách hàng</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Khách hàng</a>
+                    <a href="#" class="link">Danh sách khách hàng</a>
+                    <a href="#" class="link">Nhóm khách hàng</a>
+                </div>
+            </li>
+
+            <!-- -------- Dropdown List Item ------- -->
+            <li class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-extension'></i>
+                        <span class="name">Nhân viên</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Nhân viên</a>
+                    <a href="#" class="link">Danh sách nhân viên</a>
+                    <a href="#" class="link">Chấm công</a>
+                </div>
+            </li>
+
+            <!-- -------- Dropdown List Item ------- -->
+            <li class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-extension'></i>
+                        <span class="name">Báo cáo</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Báo cáo</a>
+                    <a href="#" class="link">Báo cáo tài chính</a>
+                    <a href="#" class="link">Báo cáo kho</a>
+                    <a href="#" class="link">Báo cáo khách hàng</a>
+                </div>
+            </li>
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li>
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-cog'></i>
+                        <span class="name">Cài đặt</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Cài đặt</a>
+                </div>
+            </li>
+        </ul>
     </div>
 
-    <script>
-        $(".sidebar ul li").on('click', function () {
-            $(".sidebar ul li.active").removeClass('active');
-            $(this).addClass('active');
-        });
+    <!-- ============= Home Section =============== -->
+    <section class="home">
+        <nav>
+            <div class="toggle-sidebar">
+                <i class='bx bx-menu'></i>
+                <a href="#"><div class="text">UTC Express</div></a>
+            </div>
 
-        $('.open-btn').on('click', function () {
-            $('.sidebar').addClass('active');
+            <form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Tìm kiếm...">
+					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="help">
+				<i class='bx bxs-help-circle'></i>
+				<span class="text">Hỗ trợ</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="/assets//img/avt.jpg">
+			</a>
+        </nav>
 
-        });
+        <!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Trang chủ</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Trang chủ</a>
+						</li>
+						<li><i class=" bx fa-solid fa-angles-right"></i></li>
+						<li>
+							<a class="active" href="#">Chào Dương, chúc một ngày làm việc tốt lành!</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class="bx fa-solid fa-download"></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check'></i>
+					<span class="text">
+						<h3>1020</h3>
+						<p>New Order</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group'></i>
+					<span class="text">
+						<h3>2834</h3>
+						<p>Visitors</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-dollar-circle'></i>
+					<span class="text">
+						<h3>$2543</h3>
+						<p>Total Sales</p>
+					</span>
+				</li>
+			</ul>
 
 
-        $('.close-btn').on('click', function () {
-            $('.sidebar').removeClass('active');
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Recent Orders</h3>
+						<i class='bx bx-search'></i>
+						<i class='bx bx-filter'></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>User</th>
+								<th>Date Order</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="img/avt.jpg">
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/avt.jpg">
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/avt.jpg">
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/avt.jpg">
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/avt.jpg">
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="todo">
+					<div class="head">
+						<h3>Todos</h3>
+						<i class='bx bx-plus'></i>
+						<i class='bx bx-filter'></i>
+					</div>
+					<ul class="todo-list">
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="not-completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="not-completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
 
-        })
-    </script>
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+    <!-- Link JS -->
+    <script src="assets/js/main.js"></script>
 </body>
-
 </html>
