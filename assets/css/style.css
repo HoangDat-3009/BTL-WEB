@@ -34,7 +34,11 @@
     --orange: #FD7238;
     --light-orange: #FFE0D3;
 }
-
+@media(max-width:767px) {
+    .toggle-sidebar .text {
+        display: none;
+    }
+}
 /* =============== Sidebar =============== */
 .sidebar {
     position: fixed;
@@ -262,7 +266,7 @@
     position: relative;
     width: calc(100% - 280px);
     left: 280px;
-    transition: .3s ease;
+    transition: .5s ease;
 }
 
 .home .hide~.home {
@@ -308,7 +312,7 @@
 
 .home nav .nav-link {
     font-size: 16px;
-    transition: .3s ease;
+    transition: .5s ease;
 }
 
 .home nav .nav-link:hover {
@@ -402,7 +406,7 @@
     width: calc(25px - 4px);
     background: var(--blue);
     border-radius: 50%;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 
 .home nav #switch-mode:checked+.switch-mode::before {
