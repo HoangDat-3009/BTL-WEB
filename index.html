@@ -2,333 +2,330 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UTC Express</title>
-
-    <!-- Box Icons  -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Styles  -->
-    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTC Express</title>
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+  <!-- Box Icons  -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./Font-Awesome-640/css/all.css">
+  <!-- Styles  -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="sidebar close">
-        <!-- ========== Logo ============  -->
-        <a href="#" class="logo-box">
-            <i class='bx bxl-xing'></i>
-            <div class="logo-name">UTC Express</div>
+  <div class="sidebar close">
+    <!-- ========== Logo ============  -->
+    <a href="#" class="logo-box">
+      <i class='bx bxl-xing'></i>
+      <div class="logo-name">UTC Express</div>
+    </a>
+
+    <!-- ========== List ============  -->
+    <ul class="sidebar-list">
+      <!-- -------- Non Dropdown List Item ------- -->
+      <li>
+        <div class="title">
+          <a href="#" class="link">
+            <!-- <i class='bx bx-grid-alt'></i> -->
+            <i class="fa-solid fa-house"></i>
+            <span class="name">Trang chủ</span>
+          </a>
+          <!-- <i class='bx bxs-chevron-down'></i> -->
+        </div>
+        <div class="submenu">
+          <a href="#" class="link submenu-title">Trang chủ</a>
+          <!-- submenu links here  -->
+        </div>
+      </li>
+
+      <!-- -------- Dropdown List Item ------- -->
+      <li class="dropdown">
+        <div class="title">
+          <a href="#" class="link">
+            <!-- <i class='bx bx-collection'></i> -->
+            <i class="fa-solid fa-clipboard-list-check"></i>
+            <span class="name">Đơn hàng</span>
+          </a>
+          <i class='bx bxs-chevron-down'></i>
+        </div>
+        <div class="submenu">
+          <a href="#" class="link submenu-title">Đơn hàng</a>
+          <a href="#" class="link">Tạo đơn mới</a>
+          <a href="#" class="link">Xác nhận đơn hàng</a>
+        </div>
+      </li>
+
+      <!-- -------- Dropdown List Item ------- -->
+      <li class="dropdown">
+        <div class="title">
+          <a href="#" class="link">
+            <!-- <i class='bx bx-book-alt'></i> -->
+            <i class="fa-solid fa-users-line"></i>
+            <span class="name">Khách hàng</span>
+          </a>
+          <i class='bx bxs-chevron-down'></i>
+        </div>
+        <div class="submenu">
+          <a href="#" class="link submenu-title">Khách hàng</a>
+          <a href="#" class="link">Danh sách khách hàng</a>
+          <a href="#" class="link">Nhóm khách hàng</a>
+        </div>
+      </li>
+
+      <!-- -------- Dropdown List Item ------- -->
+      <li class="dropdown">
+        <div class="title">
+          <a href="#" class="link">
+            <!-- <i class='bx bx-extension'></i> -->
+            <i class="fa-regular fa-users-gear"></i>
+            <span class="name">Nhân viên</span>
+          </a>
+          <i class='bx bxs-chevron-down'></i>
+        </div>
+        <div class="submenu">
+          <a href="#" class="link submenu-title">Nhân viên</a>
+          <a href="#" class="link">Danh sách nhân viên</a>
+          <a href="#" class="link">Chấm công</a>
+        </div>
+      </li>
+
+      <!-- -------- Dropdown List Item ------- -->
+      <li class="dropdown">
+        <div class="title">
+          <a href="#" class="link">
+            <!-- <i class='bx bx-extension'></i> -->
+            <i class="fa-solid fa-chart-line-up"></i>
+            <span class="name">Báo cáo</span>
+          </a>
+          <i class='bx bxs-chevron-down'></i>
+        </div>
+        <div class="submenu">
+          <a href="#" class="link submenu-title">Báo cáo</a>
+          <a href="#" class="link">Báo cáo tài chính</a>
+          <a href="#" class="link">Báo cáo kho</a>
+          <a href="#" class="link">Báo cáo khách hàng</a>
+        </div>
+      </li>
+
+      <!-- -------- Non Dropdown List Item ------- -->
+      <li>
+        <div class="title">
+          <a href="#" class="link">
+            <i class='bx bx-cog'></i>
+            <span class="name">Cài đặt</span>
+          </a>
+          <!-- <i class='bx bxs-chevron-down'></i> -->
+        </div>
+        <div class="submenu">
+          <a href="#" class="link submenu-title">Cài đặt</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ============= Home Section =============== -->
+  <section class="home">
+    <nav>
+      <div class="toggle-sidebar">
+        <i class='bx bx-menu'></i>
+        <a href="#">
+          <div class="text">UTC Express</div>
+        </a>
+      </div>
+
+      <form action="#">
+        <div class="form-input">
+          <input type="search" placeholder="Tìm kiếm...">
+          <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+        </div>
+      </form>
+      <input type="checkbox" id="switch-mode" hidden>
+      <label for="switch-mode" class="switch-mode"></label>
+      <a href="#" class="help">
+        <i class='bx bxs-help-circle'></i>
+        <span> Hỗ trợ</span>
+      </a>
+
+      <div class="dropdown">
+        <button class="btn btn-sm btn-secondary dropdown-toggle btn-profile" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          
+            <img src="/assets//img/avt.jpg" alt="profile_img">
+            <span>ThuyDuong68</span>
+        </button>
+        <ul class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenuButton1">
+          <li class="dropdown-item-text">ThuyDuong68</li>
+          <li><a class="dropdown-item" href="#"><i class="fa-duotone fa-gear"></i> Cài đặt</a></li>
+          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+      <div class="head-title">
+        <div class="left">
+          <h1>Trang chủ</h1>
+          <ul class="breadcrumb">
+            <li>
+              <a href="#">Trang chủ</a>
+            </li>
+            <li><i class='bx bxs-chevrons-right'></i></li>
+            <li>
+              <a class="active" href="#">Chào Dương, chúc một ngày làm việc tốt lành!</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="btn-download">
+          <i class='bx bxs-download'></i>
+          <span class="text">Download PDF</span>
+        </a>
+      </div>
+
+      <ul class="box-info">
+        <a href="#">
+          <li>
+            <i class='bx bxs-calendar-check'></i>
+            <span class="text">
+              <h3>1020</h3>
+              <p>Đơn hàng mới</p>
+            </span>
+          </li>
         </a>
 
-        <!-- ========== List ============  -->
-        <ul class="sidebar-list">
-            <!-- -------- Non Dropdown List Item ------- -->
-            <li>
-                <div class="title">
-                    <a href="#" class="link">
-                        <i class='bx bx-grid-alt'></i>
-                        <span class="name">Trang chủ</span>
-                    </a>
-                    <!-- <i class='bx bxs-chevron-down'></i> -->
-                </div>
-                <div class="submenu">
-                    <a href="#" class="link submenu-title">Trang chủ</a>
-                    <!-- submenu links here  -->
-                </div>
+        <a href="#">
+          <li>
+            <i class='bx bxs-group'></i>
+            <span class="text">
+              <h3>2834</h3>
+              <p>Khách hàng</p>
+            </span>
+          </li>
+        </a>
+
+        <a href="#">
+          <li>
+            <i class='bx bxs-dollar-circle'></i>
+            <span class="text">
+              <h3>$2543</h3>
+              <p>Thu được</p>
+            </span>
+          </li>
+        </a>
+
+      </ul>
+
+      <div class="table-data">
+        <div class="order">
+          <div class="head">
+            <h3>Nhân viên tiêu biểu tháng 10</h3>
+            <i class='bx bx-search'></i>
+            <i class='bx bx-filter'></i>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Nhân viên</th>
+                <th>Tăng ca</th>
+                <th>Thưởng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="/assets//img/avt1.1.jpg">
+                  <p>John Doe</p>
+                </td>
+                <td>01-10-2021</td>
+                <td><span class="status completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="/assets//img/avt1.2.jpg">
+                  <p>John Doe</p>
+                </td>
+                <td>01-10-2021</td>
+                <td><span class="status pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="/assets//img/avt1.3.jpg">
+                  <p>John Doe</p>
+                </td>
+                <td>01-10-2021</td>
+                <td><span class="status process">Process</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="/assets//img/avt1.4.jpg">
+                  <p>John Doe</p>
+                </td>
+                <td>01-10-2021</td>
+                <td><span class="status pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="/assets//img/avt1.5.jpg">
+                  <p>John Doe</p>
+                </td>
+                <td>01-10-2021</td>
+                <td><span class="status completed">Completed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="customer">
+          <div class="head">
+            <h3>Đối tác thân thiết</h3>
+            <i class='bx bx-plus'></i>
+            <i class='bx bx-filter'></i>
+          </div>
+          <ul class="customer-list">
+            <li class="completed">
+              <p>Công ty Thành Hưng số 1</p>
+              <i class='bx bx-dots-vertical-rounded'></i>
             </li>
-
-            <!-- -------- Dropdown List Item ------- -->
-            <li class="dropdown">
-                <div class="title">
-                    <a href="#" class="link">
-                        <i class='bx bx-collection'></i>
-                        <span class="name">Đơn hàng</span>
-                    </a>
-                    <i class='bx bxs-chevron-down'></i>
-                </div>
-                <div class="submenu">
-                    <a href="#" class="link submenu-title">Đơn hàng</a>
-                    <a href="#" class="link">Tạo đơn mới</a>
-                    <a href="#" class="link">Xác nhận đơn hàng</a>
-                </div>
+            <li class="completed">
+              <p>Shopee</p>
+              <i class='bx bx-dots-vertical-rounded'></i>
             </li>
-
-            <!-- -------- Dropdown List Item ------- -->
-            <li class="dropdown">
-                <div class="title">
-                    <a href="#" class="link">
-                        <i class='bx bx-book-alt'></i>
-                        <span class="name">Khách hàng</span>
-                    </a>
-                    <i class='bx bxs-chevron-down'></i>
-                </div>
-                <div class="submenu">
-                    <a href="#" class="link submenu-title">Khách hàng</a>
-                    <a href="#" class="link">Danh sách khách hàng</a>
-                    <a href="#" class="link">Nhóm khách hàng</a>
-                </div>
+            <li class="not-completed">
+              <p>Lazada</p>
+              <i class='bx bx-dots-vertical-rounded'></i>
             </li>
-
-            <!-- -------- Dropdown List Item ------- -->
-            <li class="dropdown">
-                <div class="title">
-                    <a href="#" class="link">
-                        <i class='bx bx-extension'></i>
-                        <span class="name">Nhân viên</span>
-                    </a>
-                    <i class='bx bxs-chevron-down'></i>
-                </div>
-                <div class="submenu">
-                    <a href="#" class="link submenu-title">Nhân viên</a>
-                    <a href="#" class="link">Danh sách nhân viên</a>
-                    <a href="#" class="link">Chấm công</a>
-                </div>
+            <li class="completed">
+              <p>Công ty gì đó SOS</p>
+              <i class='bx bx-dots-vertical-rounded'></i>
             </li>
-
-            <!-- -------- Dropdown List Item ------- -->
-            <li class="dropdown">
-                <div class="title">
-                    <a href="#" class="link">
-                        <i class='bx bx-extension'></i>
-                        <span class="name">Báo cáo</span>
-                    </a>
-                    <i class='bx bxs-chevron-down'></i>
-                </div>
-                <div class="submenu">
-                    <a href="#" class="link submenu-title">Báo cáo</a>
-                    <a href="#" class="link">Báo cáo tài chính</a>
-                    <a href="#" class="link">Báo cáo kho</a>
-                    <a href="#" class="link">Báo cáo khách hàng</a>
-                </div>
+            <li class="not-completed">
+              <p>SOS</p>
+              <i class='bx bx-dots-vertical-rounded'></i>
             </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!-- MAIN -->
+  </section>
+  <!-- CONTENT -->
 
-            <!-- -------- Non Dropdown List Item ------- -->
-            <li>
-                <div class="title">
-                    <a href="#" class="link">
-                        <i class='bx bx-cog'></i>
-                        <span class="name">Cài đặt</span>
-                    </a>
-                    <!-- <i class='bx bxs-chevron-down'></i> -->
-                </div>
-                <div class="submenu">
-                    <a href="#" class="link submenu-title">Cài đặt</a>
-                </div>
-            </li>
-        </ul>
-    </div>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // var dd_main = document.querySelector(".dd_main");
 
-    <!-- ============= Home Section =============== -->
-    <section class="home">
-        <nav>
-            <div class="toggle-sidebar">
-                <i class='bx bx-menu'></i>
-                <a href="#">
-                    <div class="text">UTC Express</div>
-                </a>
-            </div>
-
-            <form action="#">
-                <div class="form-input">
-                    <input type="search" placeholder="Tìm kiếm...">
-                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
-                </div>
-            </form>
-            <input type="checkbox" id="switch-mode" hidden>
-            <label for="switch-mode" class="switch-mode"></label>
-            <a href="#" class="help">
-                <i class='bx bxs-help-circle'></i>
-                <span> Hỗ trợ</span>
-            </a>
-
-
-            <a href="#" class="profile">
-                <ul>
-                    <li class=".nr_li dd_main">
-                        <div class="user">
-                            <img src="./assets/img/avt.jpg" alt="profile_img">
-                            <span>ThuyDuong68</span>
-                        </div>
-                        <div class="dd_menu">
-                            <div class="dd_left">
-                                <ul>
-                                    <li><i class='bx bxs-cog'></i></li>
-                                    <li><i class='bx bx-log-out-circle'></i></li>
-                                </ul>
-                            </div>
-                            <div class="dd_right">
-                                <ul>
-                                    <li>Cài đặt</li>
-                                    <li>Đăng xuất</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </a>
-        </nav>
-
-        <!-- MAIN -->
-        <main>
-            <div class="head-title">
-                <div class="left">
-                    <h1>Trang chủ</h1>
-                    <ul class="breadcrumb">
-                        <li>
-                            <a href="#">Trang chủ</a>
-                        </li>
-                        <li><i class='bx bxs-chevrons-right'></i></li>
-                        <li>
-                            <a class="active" href="#">Chào Dương, chúc một ngày làm việc tốt lành!</a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="#" class="btn-download">
-                    <i class='bx bxs-download'></i>
-                    <span class="text">Download PDF</span>
-                </a>
-            </div>
-
-            <ul class="box-info">
-                <a href="#">
-                    <li>
-                        <i class='bx bxs-calendar-check'></i>
-                        <span class="text">
-                            <h3>1020</h3>
-                            <p>Đơn hàng mới</p>
-                        </span>
-                    </li>
-                </a>
-
-                <a href="#">
-                    <li>
-                        <i class='bx bxs-group'></i>
-                        <span class="text">
-                            <h3>2834</h3>
-                            <p>Khách hàng</p>
-                        </span>
-                    </li>
-                </a>
-
-                <a href="#">
-                    <li>
-                        <i class='bx bxs-dollar-circle'></i>
-                        <span class="text">
-                            <h3>$2543</h3>
-                            <p>Thu được</p>
-                        </span>
-                    </li>
-                </a>
-
-            </ul>
-
-            <div class="table-data">
-                <div class="order">
-                    <div class="head">
-                        <h3>Nhân viên tiêu biểu tháng 10</h3>
-                        <i class='bx bx-search'></i>
-                        <i class='bx bx-filter'></i>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Nhân viên</th>
-                                <th>Tăng ca</th>
-                                <th>Thưởng</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avt1.1.jpg">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status completed">Completed</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avt1.2.jpg">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status pending">Pending</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avt1.3.jpg">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status process">Process</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avt1.4.jpg">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status pending">Pending</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avt1.5.jpg">
-                                    <p>John Doe</p>
-                                </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status completed">Completed</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="customer">
-                    <div class="head">
-                        <h3>Đối tác thân thiết</h3>
-                        <i class='bx bx-plus'></i>
-                        <i class='bx bx-filter'></i>
-                    </div>
-                    <ul class="customer-list">
-                        <li class="completed">
-                            <p>Công ty Thành Hưng số 1</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="completed">
-                            <p>Shopee</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="not-completed">
-                            <p>Lazada</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="completed">
-                            <p>Công ty gì đó SOS</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="not-completed">
-                            <p>SOS</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </main>
-        <!-- MAIN -->
-    </section>
-    <!-- CONTENT -->
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        var dd_main = document.querySelector(".dd_main");
-
-        dd_main.addEventListener("click", function () {
-            this.classList.toggle("active");
-        })
-    </script>
-    <!-- Link JS -->
-    <script src="./assets/javascript/main.js"></script>
+    // dd_main.addEventListener("click", function () {
+    //     this.classList.toggle("active");
+    // })
+  </script>
+  <!-- Link JS -->
+  <script src="/assets//js/main.js"></script>
+</body>
 
 </html>
