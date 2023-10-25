@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Start Search */
+#search{
+    float: right;
+    position: relative;
+    top: 3px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #D6A2E8;
+  }
+  #noidungsearch{
+    background-color: #D6A2E8;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+  }
+  #button-search{
+    box-sizing: border-box;
+    background-color: #D6A2E8;
+    padding: 10px ;
+    border-radius: 50%;
+    border: none;
+  }
+  #search:hover #noidungsearch, #search #noidungsearch:valid{
+    width: 400px ;
+    margin: 0 15px;
+  }
+/* End Start */
+#table{
+    width: 100%;
+    position: relative;
+    top: 5px;
+    border-collapse: collapse;
+}
+#table tr,td{
+  border: 2px solid ;
+}
+#name-column th,#name-column td,#name-column tr{
+    padding: 5px 20px;
+}
+#hienthi{
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#hienthi div{
+  display: inline;
+}
+#name-column th{
+  border: 2px solid;
+}
+tr.column-color:hover{
+  background: #dddddd;
+}
+.danhsach{
+  padding-top: 30px;
+}
