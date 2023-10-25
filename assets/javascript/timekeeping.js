@@ -63,7 +63,6 @@ function updatePageButtons() {
   }
 }
 
-
 // Hàm xử lý khi nhấn nút "Trang đầu"
 function firstPage() {
   currentPage = 1;
@@ -136,15 +135,21 @@ input.addEventListener("input", function () {
 // end of search informationPersonnel
 
 // chek input
-var NamenoteTimekeeping =getElementById('NamenoteTimekeeping');
-var IDnoteTimekeeping = getElementById('IDnoteTimekeeping');
-var DatenoteTimekeeping = getElementById('DatenoteTimekeeping');
-var NoteTimekeeping = getElementById('NoteTimekeeping');
-function checknoteTimekeeping(){
-if(NamenoteTimekeeping.value===''||IDnoteTimekeeping.value===''||DatenoteTimekeeping.value===''||NoteTimekeeping.value===''){
-    alert('Hãy nhập đày đủ thông tin');
-  }else{
-    alert('Đã nhập thành công ghi chú');
+
+function checknoteTimekeeping() {
+  var NamenoteTimekeeping = getElementById("NamenoteTimekeeping");
+  var IDnoteTimekeeping = getElementById("IDnoteTimekeeping");
+  var DatenoteTimekeeping = getElementById("DatenoteTimekeeping");
+  var NoteTimekeeping = getElementById("NoteTimekeeping");
+  if (
+    NamenoteTimekeeping.value === "" ||
+    IDnoteTimekeeping.value === "" ||
+    DatenoteTimekeeping.value === "" ||
+    NoteTimekeeping.value === ""
+  ) {
+    alert("Hãy nhập đày đủ thông tin");
+  } else {
+    alert("Đã nhập thành công ghi chú");
   }
 }
-checknoteTimekeeping();
+
