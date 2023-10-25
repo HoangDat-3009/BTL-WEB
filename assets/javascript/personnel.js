@@ -51,7 +51,24 @@ function updatePageButtons() {
   const pageButtons = document.getElementById("page-buttons");
   pageButtons.innerHTML = "";
 
-  for (let i = 1; i <= totalPages; i++) {
+  let startPage, endPage;
+  if (totalPages <= 5) {
+    startPage = 1;
+    endPage = totalPages;
+  } else {
+    if (currentPage <= 2) {
+      startPage = 1;
+      endPage = 5;
+    } else if (currentPage >= totalPages - 2) {
+      startPage = totalPages - 4;
+      endPage = totalPages;
+    } else {
+      startPage = currentPage - 2;
+      endPage = currentPage + 2;
+    }
+  }
+
+  for (let i = startPage; i <= endPage; i++) {
     const pageButton = document.createElement("button");
     pageButton.textContent = i;
     pageButton.addEventListener("click", function () {
