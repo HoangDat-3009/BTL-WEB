@@ -3,7 +3,6 @@
 
 /* Globals  */
 * {
-    /* font-family: 'Poppins', sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,10 +15,10 @@
 
     --poppins: 'Poppins', sans-serif;
 
-    --color_Blue: #3f93f1;
-    --color_Dark1: #183482;
-    --color_Dark2: #CFE8FF;
-    --color_Light1: #F9F9F9;
+    --color_Blue: #0053b1;
+    --color_Dark1: #0b1e52;
+    --color_Dark2: #3C91E6;
+    --color_Light1: #d0ddf6;
     --color_Light2: #0a1055;
 
     --light: #F9F9F9;
@@ -47,6 +46,7 @@
     height: 100%;
     width: 260px;
     font-family: var(--poppins);
+    font-weight: 600;
     white-space: nowrap;
     background-color: var(--color_Dark1);
     transition: all .5s ease;
@@ -358,60 +358,102 @@
     cursor: pointer;
 }
 
-.home nav .notification {
-    font-size: 20px;
-    position: relative;
-}
-
-.home nav .notification .num {
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid var(--light);
-    background: var(--red);
-    color: var(--light);
-    font-weight: 700;
-    font-size: 12px;
+.home nav .help{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color_Dark1);
 }
 
-.home nav .profile img {
+.home nav .help .bx{
+    font-size: 20px;
+}
+
+.home nav .profile{
+    font-weight: 600;
+}
+.home nav .profile .user{
+    white-space: nowrap;
+    color: var(--color_Dark1);
+    font-size: 15px;
+}
+.home nav .profile .user img {
     width: 36px;
     height: 36px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.home nav .switch-mode {
-    display: block;
-    min-width: 50px;
-    height: 25px;
-    border-radius: 25px;
-    background: var(--grey);
-    cursor: pointer;
-    position: relative;
+.home nav .profile > ul{
+	display: flex;
+	align-items: center;
 }
 
-.home nav .switch-mode::before {
-    content: '';
+.home nav .profile ul li.nr_li{
+	margin-left: 25px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 20px;
+	position: relative;
+}
+
+.home nav .profile ul li.nr_li:hover {
+    color: #cefffc;
+}
+
+.home nav .profile ul li img{
+	width: 35px;
+	vertical-align: middle;
+}
+
+.home nav .profile .dd_menu {
     position: absolute;
-    top: 2px;
-    left: 2px;
-    bottom: 2px;
-    width: calc(25px - 4px);
-    background: var(--blue);
-    border-radius: 50%;
-    transition: all .5s ease;
+    right: 30px;
+    top: 50px;
+    display: flex;
+    background: var(--color_Light1);
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.25);
+    display: none;
 }
 
-.home nav #switch-mode:checked+.switch-mode::before {
-    left: calc(100% - (25px - 4px) - 2px);
+.home nav .profile .dd_menu .dd_left{
+	background: var(--color_Blue);
+	padding: 15px 20px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
 }
+
+.home nav .profile .dd_menu .dd_left li{
+	color: var(--light);
+}
+
+.home nav .profile .dd_menu .dd_right{
+	padding: 15px 20px;
+}
+
+.home nav .profile .dd_menu li{
+	margin-bottom: 10px;
+	color: var(--color_Dark1);
+}
+
+.home nav .profile .dd_menu:before{
+	content: "";
+	position: absolute;
+	top: -20px;
+	right: 30px;
+	border: 10px solid;
+	border-color: transparent transparent var(--color_Light1) transparent;
+}
+
+.home nav .profile .dd_main .active .dd_menu{
+	display: flex;
+}
+
+
 
 /* NAVBAR END *
 
@@ -491,7 +533,7 @@
     margin-top: 36px;
 }
 
-.home main .box-info li {
+.home main .box-info a li {
     padding: 24px;
     background: var(--light);
     border-radius: 20px;
@@ -510,17 +552,17 @@
     align-items: center;
 }
 
-.home main .box-info li:nth-child(1) .bx {
+.home main .box-info a:nth-child(1) li .bx {
     background: var(--light-blue);
     color: var(--blue);
 }
 
-.home main .box-info li:nth-child(2) .bx {
+.home main .box-info a:nth-child(2) li .bx {
     background: var(--light-yellow);
     color: var(--yellow);
 }
 
-.home main .box-info li:nth-child(3) .bx {
+.home main .box-info a:nth-child(3) li .bx {
     background: var(--light-orange);
     color: var(--orange);
 }
@@ -628,16 +670,16 @@
 }
 
 
-.home main .table-data .todo {
+.home main .table-data .customer {
     flex-grow: 1;
     flex-basis: 300px;
 }
 
-.home main .table-data .todo .todo-list {
+.home main .table-data .customer .customer-list {
     width: 100%;
 }
 
-.home main .table-data .todo .todo-list li {
+.home main .table-data .customer .customer-list li {
     width: 100%;
     margin-bottom: 16px;
     background: var(--grey);
@@ -648,19 +690,19 @@
     align-items: center;
 }
 
-.home main .table-data .todo .todo-list li .bx {
+.home main .table-data .customer .customer-list li .bx {
     cursor: pointer;
 }
 
-.home main .table-data .todo .todo-list li.completed {
+.home main .table-data .customer .customer-list li.completed {
     border-left: 10px solid var(--blue);
 }
 
-.home main .table-data .todo .todo-list li.not-completed {
+.home main .table-data  .customer .customer-list li.not-completed {
     border-left: 10px solid var(--orange);
 }
 
-.home main .table-data .todo .todo-list li:last-child {
+.home main .table-data .customer .customer-list li:last-child {
     margin-bottom: 0;
 }
 
@@ -708,7 +750,6 @@
         background: var(--red);
     }
 
-    .home nav form.show~.notification,
     .home nav form.show~.profile {
         display: none;
     }
@@ -725,7 +766,7 @@
         min-width: 420px;
     }
 
-    .home main .table-data .todo .todo-list {
+    .home main .table-data .customer .customer .customer-list {
         min-width: 420px;
     }
 }
