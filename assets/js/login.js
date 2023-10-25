@@ -29,25 +29,9 @@
 // });
 const listAccount =[
     {
-        userName: 'hoangdat',
-        passwordInput:'HoangDat39@'
-    },
-    {
-        userName: 'thuyduong',
-        passwordInput:'ThuyDuong68@'
-    },
-    {
-        userName: 'duybien',
-        passwordInput:'DuyBien09@'
-    },
-    {
-        userName: 'duchung',
-        passwordInput:'DucHung01'
-    },
-    {
-        userName: 'haidang',
-        passwordInput:'HaiDang123@'
-    },
+        userName: 'admin',
+        passwordInput:'admin'
+    }
 ]
 // let isLogin =!!localStorage.getItem('isLogin');
 let isLogin =localStorage.getItem('token') ? true : false;
