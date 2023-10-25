@@ -34,7 +34,24 @@ function updatePageButtons() {
   const pageButtons = document.getElementById("page-buttons");
   pageButtons.innerHTML = "";
 
-  for (let i = 1; i <= totalPages; i++) {
+  let startPage, endPage;
+  if (totalPages <= 5) {
+    startPage = 1;
+    endPage = totalPages;
+  } else {
+    if (currentPage <= 2) {
+      startPage = 1;
+      endPage = 5;
+    } else if (currentPage >= totalPages - 2) {
+      startPage = totalPages - 4;
+      endPage = totalPages;
+    } else {
+      startPage = currentPage - 2;
+      endPage = currentPage + 2;
+    }
+  }
+
+  for (let i = startPage; i <= endPage; i++) {
     const pageButton = document.createElement("button");
     pageButton.textContent = i;
     pageButton.addEventListener("click", function () {
@@ -45,6 +62,7 @@ function updatePageButtons() {
     pageButtons.appendChild(pageButton);
   }
 }
+
 
 // Hàm xử lý khi nhấn nút "Trang đầu"
 function firstPage() {
@@ -116,3 +134,17 @@ input.addEventListener("input", function () {
   }
 });
 // end of search informationPersonnel
+
+// chek input
+var NamenoteTimekeeping =getElementById('NamenoteTimekeeping');
+var IDnoteTimekeeping = getElementById('IDnoteTimekeeping');
+var DatenoteTimekeeping = getElementById('DatenoteTimekeeping');
+var NoteTimekeeping = getElementById('NoteTimekeeping');
+function checknoteTimekeeping(){
+if(NamenoteTimekeeping.value===''||IDnoteTimekeeping.value===''||DatenoteTimekeeping.value===''||NoteTimekeeping.value===''){
+    alert('Hãy nhập đày đủ thông tin');
+  }else{
+    alert('Đã nhập thành công ghi chú');
+  }
+}
+checknoteTimekeeping();
