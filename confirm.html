@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác nhận đơn hàng</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/confirm.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center text-content">Xác nhận đơn hàng</h1>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Người gửi</th>
+                        <th>Địa chỉ người gửi</th>
+                        <th>Số điện thoại người gửi</th>
+                        <th>Người nhận</th>
+                        <th>Địa chỉ người nhận</th>
+                        <th>Số điện thoại người nhận</th>
+                        <th>Mô tả</th>
+                        <th>Chờ xác nhận</th>
+                        <th>Ghi chú</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vương Đức Hùng</td>
+                        <td>44/102 pháo đài láng đống đa hà nội</td>
+                        <td>0383268699</td>
+                        <td>Không có thông tin</td>
+                        <td>Không biết</td>
+                        <td>0123456789</td>
+                        <td>Hàng gia dụng</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
+                                <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
+                            </div>
+                        </td>
+                        <td>
+                            <textarea name="com" class="note" cols="30" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nguyễn Duy Biền</td>
+                        <td>khum có nhớ</td>
+                        <td>khum có biết</td>
+                        <td>Không có thông tin</td>
+                        <td>Không biết</td>
+                        <td>0123456789</td>
+                        <td>Hàng gia dụng</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
+                                <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
+                            </div>
+                        </td>
+                        <td>
+                            <textarea name="com" class="note" cols="30" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nguyễn Trần Hải Đăng</td>
+                        <td>hổng nhớ</td>
+                        <td>hổng có biết</td>
+                        <td>Không có thông tin</td>
+                        <td>Không biết</td>
+                        <td>0123456789</td>
+                        <td>Hàng gia dụng</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
+                                <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
+                            </div>
+                        </td>
+                        <td>
+                            <textarea name="com" class="note" cols="30" rows="5"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/confirm.js"></script>
+</body>
+</html>

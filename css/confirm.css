@@ -1,0 +1,40 @@
+th, td,tr { 
+    padding: 8px; /* Thêm padding để tạo khoảng cách */
+    border: 4px solid;
+}
+th {
+    width: 11%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
+th:nth-child(8), th:nth-child(9) {
+    width: 15%;
+}
+.btn-group button {
+    padding: 6px 12px; /* Tăng padding */
+    border-radius: 6px; /* Bo góc */
+    margin-right: 5px; /* Khoảng cách giữa các nút */
+    border: none; /* Loại bỏ border */
+}
+.btn-group {
+    display: flex;
+}
+.btn-confirm{
+    background-color: green;
+    color: white;
+}
+.btn-cancel{
+    background-color: red;
+    color: white;
+}
+.note {
+    width: calc(100% - 12px); /* Loại bỏ viền border trong textarea */
+    box-sizing: border-box;
+}
+table {
+    border-collapse: collapse; /* Loại bỏ border thừa */
+}
+.text-content{
+    padding-bottom: 30px;
+}

@@ -1,0 +1,48 @@
+.small-input {
+    width: 250px;
+}
+
+.container {
+    padding: 20px;
+    background: #cfe2ff;
+}
+
+.container input {
+    margin-top: 5px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid rgb(207, 207, 250);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+
+}
+
+.form-container h4 {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    font-weight: 450;
+}
+
+.service-button {
+    width: 250px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 6px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.service-button.selected {
+    background: #5444b3;
+    color: rgb(168, 224, 54);
+    border: 2px solid #000;
+}
+
+.form-container button {
+    margin-top: 10px;
+}
