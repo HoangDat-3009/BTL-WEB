@@ -1,0 +1,50 @@
+.info-box {
+    /* border: 1px solid black; */
+    border-radius: 0.5rem;
+    background-color: #fff;
+    overflow: hidden;
+    display: block;
+    height: 100%;
+    padding: 1rem;
+
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+    /* margin: 1px; */
+
+}
+
+.canvasjs-chart-credit {
+    display: none;
+}
+
+.graph-text {
+    color: rgb(214, 27, 27);
+
+}
+
+.info-box .box-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .info-box #chart_div{
+    height: ;
+} */
+
+.graph-number {
+    display: flex;
+    color: rgb(55, 65, 69);
+    margin-top: auto;
+    font-size: 40px;
+}
+
+.chart-container {
+    height: 300px;
+}
+
+.page-title {
+    color: var(--color_Dark1);
+}
