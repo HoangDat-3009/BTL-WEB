@@ -1,30 +1,30 @@
-// Hiển thị dữ liệu ban đầu
+// hien thi du lieu ban dau
 document.addEventListener("DOMContentLoaded", function () {
   displayData();
   updatePageButtons();
 });
-const itemsPerPage = 10; // Số hàng trên mỗi trang
+const itemsPerPage = 10; // so hang trong trang
 let currentPage = 1;
 function displayData() {
   const dataTable = document.getElementById("data-table");
   const rows = dataTable.querySelectorAll("tr");
   const numRows = rows.length;
 
-  // Bỏ qua hàng tiêu đề
+  
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, numRows);
 
-  // Ẩn tất cả các hàng trước khi hiển thị lại
+  // an tat ca cac hang
   for (let i = 0; i < numRows; i++) {
     rows[i].style.display = "none";
   }
 
-  // Hiển thị các hàng ở trang hiện tại
+  // hien thi cac hang o trang hien tai
   for (let i = startIndex; i < endIndex; i++) {
     rows[i].style.display = "";
   }
 }
-// Hàm cập nhật nút trang cụ thể
+// cap nhap nut trang
 function updatePageButtons() {
   const dataTable = document.getElementById("data-table");
   const rows = dataTable.querySelectorAll("tr");
@@ -63,14 +63,14 @@ function updatePageButtons() {
   }
 }
 
-// Hàm xử lý khi nhấn nút "Trang đầu"
+// nut trang dau
 function firstPage() {
   currentPage = 1;
   displayData();
   updatePageButtons();
 }
 
-// Hàm xử lý khi nhấn nút "Trang cuối"
+// nut trang cuoi
 function lastPage() {
   const dataTable = document.getElementById("data-table");
   const rows = dataTable.querySelectorAll("tr");
@@ -80,7 +80,7 @@ function lastPage() {
   displayData();
   updatePageButtons();
 }
-// Hàm xử lý khi nhấn nút "Trang trước"
+// trang truoc
 function previousPage() {
   if (currentPage > 1) {
     currentPage -= 1;
@@ -89,7 +89,7 @@ function previousPage() {
   }
 }
 
-// Hàm xử lý khi nhấn nút "Trang sau"
+// trang sau
 function nextPage() {
   const dataTable = document.getElementById("data-table");
   const rows = dataTable.querySelectorAll("tr");
@@ -102,7 +102,7 @@ function nextPage() {
     updatePageButtons();
   }
 }
-// Kết nối các nút với các hàm xử lý
+// ket noi ham voi nut
 document.getElementById("first-page").addEventListener("click", firstPage);
 document
   .getElementById("previous-page")
