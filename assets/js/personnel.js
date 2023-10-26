@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   displayData();
   updatePageButtons();
 });
-const itemsPerPage = 10; // Số hàng trên mỗi trang
+const itemsPerPage = 10; // so hang trong 1 trag
 let currentPage = 1;
 function displayData() {
   const dataTable = document.getElementById("data-table");
