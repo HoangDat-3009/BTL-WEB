@@ -103,7 +103,7 @@ function drawChart2() {
     width: "100%",
     chartArea: { width: "100%", height: "80%" },
     backgroundColor: { fill: "transparent" },
-    title: "Đơn hàng đã giao",
+    title: "Đơn hàng",
     titleTextStyle: {
       fontSize: 23,
     },
