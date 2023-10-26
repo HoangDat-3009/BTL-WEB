@@ -14,7 +14,7 @@ function displayData() {
   const rows = dataTable.querySelectorAll("tr");
   const numRows = rows.length;
 
-  // Bỏ qua hàng tiêu đề
+
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, numRows);
 
