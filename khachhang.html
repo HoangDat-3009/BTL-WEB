@@ -16,79 +16,79 @@
 	<link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/khachhang.css">
-
+<!-- 
 	<style>
 		* {
-			/* change icon size in svg tag first */
-			/* add icon from bs icon set */
-			--icon-size: 30px;
-			--sidebar-width: 60px;
-			--header-height: 60px
+		  /* change icon size in svg tag first */
+		  /* add icon from bs icon set */
+		  --icon-size: 30px;
+		  --sidebar-width: 60px;
+		  --header-height: 60px
 		}
-
+	
 		.sidebar {
-			width: var(--sidebar-width);
-			background-color: rgb(13, 71, 161);
-			color: #fff !important;
+		  width: var(--sidebar-width);
+		  background-color: rgb(13, 71, 161);
+		  color: #fff !important;
 		}
-
+	
 		.sidebar-xpan {
-			width: calc(var(--sidebar-width) * 4.5);
-			align-items: normal !important;
+		  width: calc(var(--sidebar-width) * 4.5);
+		  align-items: normal !important;
 		}
-
+	
 		.logo {
-			width: var(--icon-size);
-			aspect-ratio: 1/1;
-			margin: calc((var(--sidebar-width) - var(--icon-size)) / 2);
+		  width: var(--icon-size);
+		  aspect-ratio: 1/1;
+		  margin: calc((var(--sidebar-width) - var(--icon-size)) / 2);
 		}
-
+	
 		.logo:hover {
-			background-color: rgba(0, 0, 0, 0.05);
-			border-radius: 30%;
+		  background-color: rgba(0, 0, 0, 0.05);
+		  border-radius: 30%;
 		}
-
+	
 		.logo-container {
-			width: var(--sidebar-width);
-			aspect-ratio: 1/1;
+		  width: var(--sidebar-width);
+		  aspect-ratio: 1/1;
 		}
-
+	
 		a {
-			text-decoration: none !important;
-			color: black !important;
+		  text-decoration: none !important;
+		  color: black !important;
 		}
-
+	
 		.sidebar-container {
-			height: var(--sidebar-width);
+		  height: var(--sidebar-width);
 		}
-
+	
 		button {
-			padding: 0;
-			border: none;
-			background: none;
-			outline: none;
+		  padding: 0;
+		  border: none;
+		  background: none;
+		  outline: none;
 		}
-
+	
 		.d-hidden {
-			display: none;
+		  display: none;
 		}
-
+	
 		.sidebar svg {
-			color: #fff;
+		  color: #fff;
 		}
-
+	
 		.dropdown-item-container {
-			padding-left: calc(var(--sidebar-width) + (var(--sidebar-width) / 10));
+		  padding-left: calc(var(--sidebar-width) + (var(--sidebar-width) / 10));
 		}
-
+	
 		.sidebar a {
-			color: #fff !important;
+		  color: #fff !important;
 		}
-
+	
 		.header {
-			height: var(--header-height);
+		  height: var(--header-height);
 		}
-	</style>
+	  </style> -->
 </head>
 
 <body>
@@ -112,7 +112,7 @@
 					<!-- <i class='bx bxs-chevron-down'></i> -->
 				</div>
 				<div class="submenu">
-					<a href="index.html" class="link submenu-title">Trang chủ</a>
+					<a href="#" class="link submenu-title">Trang chủ</a>
 					<!-- submenu links here  -->
 				</div>
 			</li>
@@ -147,7 +147,7 @@
 				<div class="submenu">
 					<a href="#" class="link submenu-title">Khách hàng</a>
 					<a href="./khachhang.html" class="link">Danh sách khách hàng</a>
-					<a href="khachhang2.html" class="link">Nhóm khách hàng</a>
+					<a href="./khachhang2.html" class="link">Nhóm khách hàng</a>
 				</div>
 			</li>
 
@@ -171,14 +171,14 @@
 			<!-- -------- Non Dropdown List Item ------- -->
 			<li>
 				<div class="title">
-					<a href="#" class="link">
+					<a href="./report.html" class="link">
 						<i class="fa-solid fa-chart-line-up"></i>
 						<span class="name">Báo cáo</span>
 					</a>
 					<!-- <i class='bx bxs-chevron-down'></i> -->
 				</div>
 				<div class="submenu">
-					<a href="#" class="link submenu-title">Báo cáo</a>
+					<a href="./report.html" class="link submenu-title">Báo cáo</a>
 				</div>
 			</li>
 
@@ -240,42 +240,51 @@
 		<!-- MAIN -->
 		<main>
 			<!-- <div class="container"> -->
-			<div class="row text-center">
+				<div class="row text-center">
 				<h1 class="danhsach">Danh sách khách hàng</h1>
-			</div>
-			<div id="search">
-				<input type="" id="noidungsearch" placeholder="Vui lòng nhập họ tên hoặc mã khách hàng..." required>
-				<button id="button-search"><svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="18"
-						fill="currentColor" class="bi bi-search" viewBox="0 0 17.5 17">
-						<path
-							d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+			  </div>
+				<div id="search">
+				  <input type="" id="noidungsearch" placeholder="Vui lòng nhập họ tên hoặc mã khách hàng..." required>
+				  <button id="button-search"><svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="18"
+					  fill="currentColor" class="bi bi-search" viewBox="0 0 17.5 17">
+					  <path
+						d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
 					</svg></button>
-			</div>
-			<div>
-				<table>
+				</div>
+				<div>
+				  <table>
 					<tr id="name-column">
-						<th id="hihi">
-							<button class="table1" onclick="anhien('setting-chill')">
-								<div class="setting-khachhang">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-										class="bi bi-gear-fill" viewBox="0 0 16 16">
-										<path
-											d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
-									</svg>
-								</div>
-								<button class="setting-chill d-none">Xóa</button>
-							</button>
-							<input type="checkbox" onchange="change()"></input>
-						</th>
-						<th>Mã khách hàng</th>
-						<th>Tên khách hàng</th>
-						<th>Số điện thoại</th>
-						<th>Nhóm khách hàng</th>
-						<th>Địa chỉ gửi</th>
-						<th>Địa chỉ nhận</th>
-						<th>Tổng số lượng đơn hàng</th>
+					  <th id="hihi">
+						<button class="table1" onclick="anhien('setting-chill')">
+						  <div class="setting-khachhang">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+							  class="bi bi-gear-fill" viewBox="0 0 16 16">
+							  <path
+								d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+							</svg>
+						  </div>
+						  <button class="setting-chill d-none">Xóa</button>
+						</button>
+						<input type="checkbox" onchange="change()"></input>
+					  </th>
+					  <th>Mã khách hàng</th>
+					  <th>Tên khách hàng</th>
+					  <th>Số điện thoại</th>
+					  <th>Nhóm khách hàng</th>
+					  <th>Địa chỉ gửi</th>
+					  <th>Địa chỉ nhận</th>
+					  <th>Tổng số lượng đơn hàng</th>
 					</tr>
 					<tr class="doimau " onclick="clickchangecolor(this)">
+					  <td class="danhdau"><input type="checkbox" class="checkbox1"></td>
+					  <td>CNZN83045</td>
+					  <td>Giàng A Phò</td>
+					  <td>0893593295</td>
+					  <td>Bán lẻ</td>
+					  <td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
+					  <td>Nam Trung-Tiền Hải-Thái Bình</td>
+					  <td>10</td>
+					</tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -284,8 +293,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -294,8 +302,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -304,8 +311,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -314,8 +320,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -324,8 +329,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -334,8 +338,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -344,8 +347,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -354,8 +356,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -364,8 +365,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -374,8 +374,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -384,8 +383,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -394,8 +392,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -404,8 +401,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -414,8 +410,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -424,8 +419,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -434,8 +428,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -444,8 +437,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -454,8 +446,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -464,8 +455,7 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
+					  </tr><tr class="doimau " onclick="clickchangecolor(this)">
 						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
 						<td>CNZN83045</td>
 						<td>Giàng A Phò</td>
@@ -474,19 +464,9 @@
 						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
 						<td>Nam Trung-Tiền Hải-Thái Bình</td>
 						<td>10</td>
-					</tr>
-					<tr class="doimau " onclick="clickchangecolor(this)">
-						<td class="danhdau"><input type="checkbox" class="checkbox1"></td>
-						<td>CNZN83045</td>
-						<td>Giàng A Phò</td>
-						<td>0893593295</td>
-						<td>Bán lẻ</td>
-						<td>Đỗ Đức Dục-Mễ Trì-Hà Nội</td>
-						<td>Nam Trung-Tiền Hải-Thái Bình</td>
-						<td>10</td>
-					</tr>
-			</div>
-			</div>
+					  </tr>
+				</div>
+			  </div>
 
 		</main>
 		<!-- MAIN -->

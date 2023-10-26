@@ -16,78 +16,6 @@
 	<link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/khachhang2.css">
-	<style>
-		* {
-			/* change icon size in svg tag first */
-			/* add icon from bs icon set */
-			--icon-size: 30px;
-			--sidebar-width: 60px;
-			--header-height: 60px
-		}
-
-		.sidebar {
-			width: var(--sidebar-width);
-			background-color: rgb(13, 71, 161);
-			color: #fff !important;
-		}
-
-		.sidebar-xpan {
-			width: calc(var(--sidebar-width) * 4.5);
-			align-items: normal !important;
-		}
-
-		.logo {
-			width: var(--icon-size);
-			aspect-ratio: 1/1;
-			margin: calc((var(--sidebar-width) - var(--icon-size)) / 2);
-		}
-
-		.logo:hover {
-			background-color: rgba(0, 0, 0, 0.05);
-			border-radius: 30%;
-		}
-
-		.logo-container {
-			width: var(--sidebar-width);
-			aspect-ratio: 1/1;
-		}
-
-		a {
-			text-decoration: none !important;
-			color: black !important;
-		}
-
-		.sidebar-container {
-			height: var(--sidebar-width);
-		}
-
-		button {
-			padding: 0;
-			border: none;
-			background: none;
-			outline: none;
-		}
-
-		.d-hidden {
-			display: none;
-		}
-
-		.sidebar svg {
-			color: #fff;
-		}
-
-		.dropdown-item-container {
-			padding-left: calc(var(--sidebar-width) + (var(--sidebar-width) / 10));
-		}
-
-		.sidebar a {
-			color: #fff !important;
-		}
-
-		.header {
-			height: var(--header-height);
-		}
-	</style>
 </head>
 
 <body>
@@ -111,7 +39,7 @@
 					<!-- <i class='bx bxs-chevron-down'></i> -->
 				</div>
 				<div class="submenu">
-					<a href="index.html" class="link submenu-title">Trang chủ</a>
+					<a href="#" class="link submenu-title">Trang chủ</a>
 					<!-- submenu links here  -->
 				</div>
 			</li>
@@ -144,8 +72,8 @@
 					<i class='bx bxs-chevron-down'></i>
 				</div>
 				<div class="submenu">
-					<a href="khachhang.html" class="link submenu-title">Khách hàng</a>
-					<a href="khachhang.html" class="link">Danh sách khách hàng</a>
+					<a href="#" class="link submenu-title">Khách hàng</a>
+					<a href="./khachhang.html" class="link">Danh sách khách hàng</a>
 					<a href="./khachhang2.html" class="link">Nhóm khách hàng</a>
 				</div>
 			</li>
@@ -170,14 +98,14 @@
 			<!-- -------- Non Dropdown List Item ------- -->
 			<li>
 				<div class="title">
-					<a href="#" class="link">
+					<a href="./report.html" class="link">
 						<i class="fa-solid fa-chart-line-up"></i>
 						<span class="name">Báo cáo</span>
 					</a>
 					<!-- <i class='bx bxs-chevron-down'></i> -->
 				</div>
 				<div class="submenu">
-					<a href="#" class="link submenu-title">Báo cáo</a>
+					<a href="./report.html" class="link submenu-title">Báo cáo</a>
 				</div>
 			</li>
 
@@ -240,186 +168,186 @@
 		<main>
 			<div class="container">
 				<div class="row text-center">
-					<h1 class="danhsach">Danh sách nhóm khách hàng</h1>
+				  <h1 class="danhsach">Danh sách nhóm khách hàng</h1>
 				</div>
 				<div id="search">
-					<input type="" id="noidungsearch" placeholder="Vui lòng nhập tên nhóm hoặc mã nhóm..." required>
-					<button id="button-search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-							fill="currentColor" class="bi bi-search" viewBox="0 0 17 17">
-							<path
-								d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-						</svg></button>
+				  <input type="" id="noidungsearch" placeholder="Vui lòng nhập tên nhóm hoặc mã nhóm..." required>
+				  <button id="button-search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+					  class="bi bi-search" viewBox="0 0 17 17">
+					  <path
+						d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+					</svg></button>
 				</div>
 				<div class="content-main">
-					<table id="table" class="text-center">
-						<div>
-							<tr id="name-column">
-								<th class="icon-arrow text-center">Tên nhóm</th>
-								<th>Mã Nhóm</th>
-								<th>Loại nhóm</th>
-								<th>Số lượng khách hàng</th>
-								<th>Ngày tạo</th>
-							</tr>
-						</div>
-						<tr class="column-color">
-							<td>Ngủ quên</td>
-							<td>SẺTGSTRH</td>
-							<td>Cố định</td>
-							<td>10</td>
-							<td>30/3/2020</td>
-						</tr>
-						<tr class="column-color">
-							<td>Khách hàng thân thiết</td>
-							<td>LSDIRKFJHG</td>
-							<td>Tự Động</td>
-							<td>1</td>
-							<td>20/12/2020</td>
-						</tr>
-						<tr class="column-color">
-							<td>Nhóm A</td>
-							<td>001</td>
-							<td>Nhóm sản phẩm</td>
-							<td>20</td>
-							<td>2023-10-15</td>
-						</tr>
-						<tr class="column-color">
-							<td>Nhóm B</td>
-							<td>002</td>
-							<td>Nhóm dịch vụ</td>
-							<td>10</td>
-							<td>2023-10-18</td>
-						</tr>
-						<!-- Thêm các hàng khác tương tự -->
-						<tr class="column-color">
-							<td>Nhóm T</td>
-							<td>020</td>
-							<td>Nhóm sản phẩm</td>
-							<td>5</td>
-							<td>2023-10-21</td>
-						</tr>
-						<tr class="column-color">
-							<td>Ngủ quên</td>
-							<td>SẺTGSTRH</td>
-							<td>Cố định</td>
-							<td>10</td>
-							<td>30/3/2020</td>
-						</tr>
-						<tr class="column-color">
-							<td>Khách hàng thân thiết</td>
-							<td>LSDIRKFJHG</td>
-							<td>Tự Động</td>
-							<td>1</td>
-							<td>20/12/2020</td>
-						</tr>
-						<tr class="column-color">
-							<td>Nhóm A</td>
-							<td>001</td>
-							<td>Nhóm sản phẩm</td>
-							<td>20</td>
-							<td>2023-10-15</td>
-						</tr>
-						<tr class="column-color">
-							<td>Nhóm B</td>
-							<td>002</td>
-							<td>Nhóm dịch vụ</td>
-							<td>10</td>
-							<td>2023-10-18</td>
-						</tr>
-						<!-- Thêm các hàng khác tương tự -->
-						<tr class="column-color">
-							<td>Nhóm T</td>
-							<td>020</td>
-							<td>Nhóm sản phẩm</td>
-							<td>5</td>
-							<td>2023-10-21</td>
-						</tr>
-						<tr class="column-color">
-							<td>Ngủ quên</td>
-							<td>SẺTGSTRH</td>
-							<td>Cố định</td>
-							<td>10</td>
-							<td>30/3/2020</td>
-						</tr>
-						<tr class="column-color">
-							<td>Khách hàng thân thiết</td>
-							<td>LSDIRKFJHG</td>
-							<td>Tự Động</td>
-							<td>1</td>
-							<td>20/12/2020</td>
-						</tr>
-						<tr class="column-color">
-							<td>Nhóm A</td>
-							<td>001</td>
-							<td>Nhóm sản phẩm</td>
-							<td>20</td>
-							<td>2023-10-15</td>
-						</tr>
-						<tr class="column-color">
-							<td>Nhóm B</td>
-							<td>002</td>
-							<td>Nhóm dịch vụ</td>
-							<td>10</td>
-							<td>2023-10-18</td>
-						</tr>
-						<!-- Thêm các hàng khác tương tự -->
-						<tr class="column-color">
-							<td>Nhóm T</td>
-							<td>020</td>
-							<td>Nhóm sản phẩm</td>
-							<td>5</td>
-							<td>2023-10-21</td>
-						</tr>
-						<tr class="column-color">
-							<td>Ngủ quên</td>
-							<td>SẺTGSTRH</td>
-							<td>Cố định</td>
-							<td>10</td>
-							<td>30/3/2020</td>
-						</tr>
-						<tr class="column-color">
-							<td>Khách hàng thân thiết</td>
-							<td>LSDIRKFJHG</td>
-							<td>Tự Động</td>
-							<td>1</td>
-							<td>20/12/2020</td>
-						</tr>
-						<tr class="column-color">
-							<td>Nhóm A</td>
-							<td>001</td>
-							<td>Nhóm sản phẩm</td>
-							<td>20</td>
-							<td>2023-10-15</td>
-						</tr>
-						<tr class="column-color">
-							<td>Nhóm B</td>
-							<td>002</td>
-							<td>Nhóm dịch vụ</td>
-							<td>10</td>
-							<td>2023-10-18</td>
-						</tr>
-						<!-- Thêm các hàng khác tương tự -->
-						<tr class="column-color">
-							<td>Nhóm T</td>
-							<td>020</td>
-							<td>Nhóm sản phẩm</td>
-							<td>5</td>
-							<td>2023-10-21</td>
-						</tr>
-
-						<tr>
-							<td colspan="5" id="hienthi">
-								<div id="show_content">Hiển thị</div>
-								<select id="show_quantity">
-									<option value=5>5</option>
-									<option value=10>10</option>
-									<option value=15>15</option>
-									<option value=20>20</option>
-								</select>
-							</td>
-						</tr>
-					</table>
+				  <table id="table" class="text-center">
+					<div>
+					<tr id="name-column">
+					  <th class="icon-arrow text-center">Tên nhóm</th>
+					  <th>Mã Nhóm</th>
+					  <th>Loại nhóm</th>
+					  <th>Số lượng khách hàng</th>
+					  <th>Ngày tạo</th>
+					</tr>
+					</div>
+					<tr class="column-color">
+					  <td>Ngủ quên</td>
+					  <td>SẺTGSTRH</td>
+					  <td>Cố định</td>
+					  <td>10</td>
+					  <td>30/3/2020</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Khách hàng thân thiết</td>
+					  <td>LSDIRKFJHG</td>
+					  <td>Tự Động</td>
+					  <td>1</td>
+					  <td>20/12/2020</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Nhóm A</td>
+					  <td>001</td>
+					  <td>Nhóm sản phẩm</td>
+					  <td>20</td>
+					  <td>2023-10-15</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Nhóm B</td>
+					  <td>002</td>
+					  <td>Nhóm dịch vụ</td>
+					  <td>10</td>
+					  <td>2023-10-18</td>
+					</tr>
+					<!-- Thêm các hàng khác tương tự -->
+					<tr class="column-color">
+					  <td>Nhóm T</td>
+					  <td>020</td>
+					  <td>Nhóm sản phẩm</td>
+					  <td>5</td>
+					  <td>2023-10-21</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Ngủ quên</td>
+					  <td>SẺTGSTRH</td>
+					  <td>Cố định</td>
+					  <td>10</td>
+					  <td>30/3/2020</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Khách hàng thân thiết</td>
+					  <td>LSDIRKFJHG</td>
+					  <td>Tự Động</td>
+					  <td>1</td>
+					  <td>20/12/2020</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Nhóm A</td>
+					  <td>001</td>
+					  <td>Nhóm sản phẩm</td>
+					  <td>20</td>
+					  <td>2023-10-15</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Nhóm B</td>
+					  <td>002</td>
+					  <td>Nhóm dịch vụ</td>
+					  <td>10</td>
+					  <td>2023-10-18</td>
+					</tr>
+					<!-- Thêm các hàng khác tương tự -->
+					<tr class="column-color">
+					  <td>Nhóm T</td>
+					  <td>020</td>
+					  <td>Nhóm sản phẩm</td>
+					  <td>5</td>
+					  <td>2023-10-21</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Ngủ quên</td>
+					  <td>SẺTGSTRH</td>
+					  <td>Cố định</td>
+					  <td>10</td>
+					  <td>30/3/2020</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Khách hàng thân thiết</td>
+					  <td>LSDIRKFJHG</td>
+					  <td>Tự Động</td>
+					  <td>1</td>
+					  <td>20/12/2020</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Nhóm A</td>
+					  <td>001</td>
+					  <td>Nhóm sản phẩm</td>
+					  <td>20</td>
+					  <td>2023-10-15</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Nhóm B</td>
+					  <td>002</td>
+					  <td>Nhóm dịch vụ</td>
+					  <td>10</td>
+					  <td>2023-10-18</td>
+					</tr>
+					<!-- Thêm các hàng khác tương tự -->
+					<tr class="column-color">
+					  <td>Nhóm T</td>
+					  <td>020</td>
+					  <td>Nhóm sản phẩm</td>
+					  <td>5</td>
+					  <td>2023-10-21</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Ngủ quên</td>
+					  <td>SẺTGSTRH</td>
+					  <td>Cố định</td>
+					  <td>10</td>
+					  <td>30/3/2020</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Khách hàng thân thiết</td>
+					  <td>LSDIRKFJHG</td>
+					  <td>Tự Động</td>
+					  <td>1</td>
+					  <td>20/12/2020</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Nhóm A</td>
+					  <td>001</td>
+					  <td>Nhóm sản phẩm</td>
+					  <td>20</td>
+					  <td>2023-10-15</td>
+					</tr>
+					<tr class="column-color">
+					  <td>Nhóm B</td>
+					  <td>002</td>
+					  <td>Nhóm dịch vụ</td>
+					  <td>10</td>
+					  <td>2023-10-18</td>
+					</tr>
+					<!-- Thêm các hàng khác tương tự -->
+					<tr class="column-color">
+					  <td>Nhóm T</td>
+					  <td>020</td>
+					  <td>Nhóm sản phẩm</td>
+					  <td>5</td>
+					  <td>2023-10-21</td>
+					</tr>
+		
+					<tr>
+					  <td colspan="5" id="hienthi">
+						<div id="show_content">Hiển thị</div>
+						<select id="show_quantity">
+						  <option value=5>5</option>
+						  <option value=10>10</option>
+						  <option value=15>15</option>
+						  <option value=20>20</option>
+						</select>
+					  </td>
+					</tr>
+				  </table>
 				</div>
-			</div>
+			  </div>
 
 		</main>
 		<!-- MAIN -->
