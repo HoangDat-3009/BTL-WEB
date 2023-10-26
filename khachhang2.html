@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UTC Express</title>
+	<!-- bootstrap link -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+		integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+	<!-- Box Icons  -->
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="./Font-Awesome-640/css/all.css">
+	<!-- Styles  -->
+	<link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/khachhang2.css">
+	<style>
+		* {
+			/* change icon size in svg tag first */
+			/* add icon from bs icon set */
+			--icon-size: 30px;
+			--sidebar-width: 60px;
+			--header-height: 60px
+		}
+
+		.sidebar {
+			width: var(--sidebar-width);
+			background-color: rgb(13, 71, 161);
+			color: #fff !important;
+		}
+
+		.sidebar-xpan {
+			width: calc(var(--sidebar-width) * 4.5);
+			align-items: normal !important;
+		}
+
+		.logo {
+			width: var(--icon-size);
+			aspect-ratio: 1/1;
+			margin: calc((var(--sidebar-width) - var(--icon-size)) / 2);
+		}
+
+		.logo:hover {
+			background-color: rgba(0, 0, 0, 0.05);
+			border-radius: 30%;
+		}
+
+		.logo-container {
+			width: var(--sidebar-width);
+			aspect-ratio: 1/1;
+		}
+
+		a {
+			text-decoration: none !important;
+			color: black !important;
+		}
+
+		.sidebar-container {
+			height: var(--sidebar-width);
+		}
+
+		button {
+			padding: 0;
+			border: none;
+			background: none;
+			outline: none;
+		}
+
+		.d-hidden {
+			display: none;
+		}
+
+		.sidebar svg {
+			color: #fff;
+		}
+
+		.dropdown-item-container {
+			padding-left: calc(var(--sidebar-width) + (var(--sidebar-width) / 10));
+		}
+
+		.sidebar a {
+			color: #fff !important;
+		}
+
+		.header {
+			height: var(--header-height);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="sidebar close">
+		<!-- ========== Logo ============  -->
+		<a href="#" class="logo-box">
+			<i class='bx bxl-xing'></i>
+			<div class="logo-name">UTC Express</div>
+		</a>
+
+		<!-- ========== List ============  -->
+		<ul class="sidebar-list">
+			<!-- -------- Non Dropdown List Item ------- -->
+			<li>
+				<div class="title">
+					<a href="#" class="link">
+						<!-- <i class='bx bx-grid-alt'></i> -->
+						<i class="fa-solid fa-house"></i>
+						<span class="name">Trang chủ</span>
+					</a>
+					<!-- <i class='bx bxs-chevron-down'></i> -->
+				</div>
+				<div class="submenu">
+					<a href="index.html" class="link submenu-title">Trang chủ</a>
+					<!-- submenu links here  -->
+				</div>
+			</li>
+
+			<!-- -------- Dropdown List Item ------- -->
+			<li class="dropdown">
+				<div class="title">
+					<a href="#" class="link">
+						<!-- <i class='bx bx-collection'></i> -->
+						<i class="fa-solid fa-clipboard-list-check"></i>
+						<span class="name">Đơn hàng</span>
+					</a>
+					<i class='bx bxs-chevron-down'></i>
+				</div>
+				<div class="submenu">
+					<a href="#" class="link submenu-title">Đơn hàng</a>
+					<a href="./create.html" class="link">Tạo đơn mới</a>
+					<a href="./confirm.html" class="link">Xác nhận đơn hàng</a>
+				</div>
+			</li>
+
+			<!-- -------- Dropdown List Item ------- -->
+			<li class="dropdown">
+				<div class="title">
+					<a href="#" class="link">
+						<!-- <i class='bx bx-book-alt'></i> -->
+						<i class="fa-solid fa-users-line"></i>
+						<span class="name">Khách hàng</span>
+					</a>
+					<i class='bx bxs-chevron-down'></i>
+				</div>
+				<div class="submenu">
+					<a href="khachhang.html" class="link submenu-title">Khách hàng</a>
+					<a href="khachhang.html" class="link">Danh sách khách hàng</a>
+					<a href="./khachhang2.html" class="link">Nhóm khách hàng</a>
+				</div>
+			</li>
+
+			<!-- -------- Dropdown List Item ------- -->
+			<li class="dropdown">
+				<div class="title">
+					<a href="#" class="link">
+						<!-- <i class='bx bx-extension'></i> -->
+						<i class="fa-regular fa-users-gear"></i>
+						<span class="name">Nhân viên</span>
+					</a>
+					<i class='bx bxs-chevron-down'></i>
+				</div>
+				<div class="submenu">
+					<a href="#" class="link submenu-title">Nhân viên</a>
+					<a href="./personnel.html" class="link">Danh sách nhân viên</a>
+					<a href="./Timekeeping.html" class="link">Chấm công</a>
+				</div>
+			</li>
+
+			<!-- -------- Non Dropdown List Item ------- -->
+			<li>
+				<div class="title">
+					<a href="#" class="link">
+						<i class="fa-solid fa-chart-line-up"></i>
+						<span class="name">Báo cáo</span>
+					</a>
+					<!-- <i class='bx bxs-chevron-down'></i> -->
+				</div>
+				<div class="submenu">
+					<a href="#" class="link submenu-title">Báo cáo</a>
+				</div>
+			</li>
+
+			<!-- -------- Non Dropdown List Item ------- -->
+			<li>
+				<div class="title">
+					<a href="#" class="link">
+						<i class='bx bx-cog'></i>
+						<span class="name">Cài đặt</span>
+					</a>
+					<!-- <i class='bx bxs-chevron-down'></i> -->
+				</div>
+				<div class="submenu">
+					<a href="#" class="link submenu-title">Cài đặt</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- ============= Home Section =============== -->
+	<section class="home">
+		<nav>
+			<div class="toggle-sidebar">
+				<i class='bx bx-menu'></i>
+				<a href="#">
+					<div class="text">UTC Express</div>
+				</a>
+			</div>
+
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Tìm kiếm...">
+					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="help">
+				<i class='bx bxs-help-circle'></i>
+				<span> Hỗ trợ</span>
+			</a>
+
+			<div class="dropdown">
+				<button class="btn btn-sm btn-secondary dropdown-toggle btn-profile" type="button"
+					id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+					<img src="./assets/img/avt.jpg" alt="profile_img">
+					<span>ThuyDuong68</span>
+				</button>
+				<ul class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenuButton1">
+					<li class="dropdown-item-text">ThuyDuong68</li>
+					<li><a class="dropdown-item" href="#"><i class="fa-duotone fa-gear"></i> Cài đặt</a></li>
+					<li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- MAIN -->
+		<main>
+			<div class="container">
+				<div class="row text-center">
+					<h1 class="danhsach">Danh sách nhóm khách hàng</h1>
+				</div>
+				<div id="search">
+					<input type="" id="noidungsearch" placeholder="Vui lòng nhập tên nhóm hoặc mã nhóm..." required>
+					<button id="button-search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+							fill="currentColor" class="bi bi-search" viewBox="0 0 17 17">
+							<path
+								d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+						</svg></button>
+				</div>
+				<div class="content-main">
+					<table id="table" class="text-center">
+						<div>
+							<tr id="name-column">
+								<th class="icon-arrow text-center">Tên nhóm</th>
+								<th>Mã Nhóm</th>
+								<th>Loại nhóm</th>
+								<th>Số lượng khách hàng</th>
+								<th>Ngày tạo</th>
+							</tr>
+						</div>
+						<tr class="column-color">
+							<td>Ngủ quên</td>
+							<td>SẺTGSTRH</td>
+							<td>Cố định</td>
+							<td>10</td>
+							<td>30/3/2020</td>
+						</tr>
+						<tr class="column-color">
+							<td>Khách hàng thân thiết</td>
+							<td>LSDIRKFJHG</td>
+							<td>Tự Động</td>
+							<td>1</td>
+							<td>20/12/2020</td>
+						</tr>
+						<tr class="column-color">
+							<td>Nhóm A</td>
+							<td>001</td>
+							<td>Nhóm sản phẩm</td>
+							<td>20</td>
+							<td>2023-10-15</td>
+						</tr>
+						<tr class="column-color">
+							<td>Nhóm B</td>
+							<td>002</td>
+							<td>Nhóm dịch vụ</td>
+							<td>10</td>
+							<td>2023-10-18</td>
+						</tr>
+						<!-- Thêm các hàng khác tương tự -->
+						<tr class="column-color">
+							<td>Nhóm T</td>
+							<td>020</td>
+							<td>Nhóm sản phẩm</td>
+							<td>5</td>
+							<td>2023-10-21</td>
+						</tr>
+						<tr class="column-color">
+							<td>Ngủ quên</td>
+							<td>SẺTGSTRH</td>
+							<td>Cố định</td>
+							<td>10</td>
+							<td>30/3/2020</td>
+						</tr>
+						<tr class="column-color">
+							<td>Khách hàng thân thiết</td>
+							<td>LSDIRKFJHG</td>
+							<td>Tự Động</td>
+							<td>1</td>
+							<td>20/12/2020</td>
+						</tr>
+						<tr class="column-color">
+							<td>Nhóm A</td>
+							<td>001</td>
+							<td>Nhóm sản phẩm</td>
+							<td>20</td>
+							<td>2023-10-15</td>
+						</tr>
+						<tr class="column-color">
+							<td>Nhóm B</td>
+							<td>002</td>
+							<td>Nhóm dịch vụ</td>
+							<td>10</td>
+							<td>2023-10-18</td>
+						</tr>
+						<!-- Thêm các hàng khác tương tự -->
+						<tr class="column-color">
+							<td>Nhóm T</td>
+							<td>020</td>
+							<td>Nhóm sản phẩm</td>
+							<td>5</td>
+							<td>2023-10-21</td>
+						</tr>
+						<tr class="column-color">
+							<td>Ngủ quên</td>
+							<td>SẺTGSTRH</td>
+							<td>Cố định</td>
+							<td>10</td>
+							<td>30/3/2020</td>
+						</tr>
+						<tr class="column-color">
+							<td>Khách hàng thân thiết</td>
+							<td>LSDIRKFJHG</td>
+							<td>Tự Động</td>
+							<td>1</td>
+							<td>20/12/2020</td>
+						</tr>
+						<tr class="column-color">
+							<td>Nhóm A</td>
+							<td>001</td>
+							<td>Nhóm sản phẩm</td>
+							<td>20</td>
+							<td>2023-10-15</td>
+						</tr>
+						<tr class="column-color">
+							<td>Nhóm B</td>
+							<td>002</td>
+							<td>Nhóm dịch vụ</td>
+							<td>10</td>
+							<td>2023-10-18</td>
+						</tr>
+						<!-- Thêm các hàng khác tương tự -->
+						<tr class="column-color">
+							<td>Nhóm T</td>
+							<td>020</td>
+							<td>Nhóm sản phẩm</td>
+							<td>5</td>
+							<td>2023-10-21</td>
+						</tr>
+						<tr class="column-color">
+							<td>Ngủ quên</td>
+							<td>SẺTGSTRH</td>
+							<td>Cố định</td>
+							<td>10</td>
+							<td>30/3/2020</td>
+						</tr>
+						<tr class="column-color">
+							<td>Khách hàng thân thiết</td>
+							<td>LSDIRKFJHG</td>
+							<td>Tự Động</td>
+							<td>1</td>
+							<td>20/12/2020</td>
+						</tr>
+						<tr class="column-color">
+							<td>Nhóm A</td>
+							<td>001</td>
+							<td>Nhóm sản phẩm</td>
+							<td>20</td>
+							<td>2023-10-15</td>
+						</tr>
+						<tr class="column-color">
+							<td>Nhóm B</td>
+							<td>002</td>
+							<td>Nhóm dịch vụ</td>
+							<td>10</td>
+							<td>2023-10-18</td>
+						</tr>
+						<!-- Thêm các hàng khác tương tự -->
+						<tr class="column-color">
+							<td>Nhóm T</td>
+							<td>020</td>
+							<td>Nhóm sản phẩm</td>
+							<td>5</td>
+							<td>2023-10-21</td>
+						</tr>
+
+						<tr>
+							<td colspan="5" id="hienthi">
+								<div id="show_content">Hiển thị</div>
+								<select id="show_quantity">
+									<option value=5>5</option>
+									<option value=10>10</option>
+									<option value=15>15</option>
+									<option value=20>20</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+
+
+
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Link JS -->
+	<script src="./assets/js/main.js"></script>
+	<script src="assets/js/khachhang2.js"></script>
+</body>
+
+</html>

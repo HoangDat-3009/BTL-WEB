@@ -1,0 +1,90 @@
+/* body{
+  position: relative;
+} */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+td, th {
+    border: 0px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+tr.doimau:hover{
+  background-color: #dddddd;
+}
+.table1{
+  position: relative;
+  bottom: 2px;
+  right: 10px;
+}
+.container{
+  position: sticky;
+  top:60px;
+  font-size: 15px;
+}
+.setting-khachhang{
+  display: block;
+}
+#hihi{
+  position: relative;
+  
+}
+#name-column{
+  background-color: #D0DDF6;
+}
+.setting-chill{
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  padding: 0;
+  top: 28px;
+  right: 13px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: bisque;
+}
+/* SEARCH */
+#search{
+  float: right;
+  position: relative;
+  bottom: 5px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: #D6A2E8;
+}
+#noidungsearch{
+  background-color: #D6A2E8;
+  box-sizing: border-box;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  width: 0;
+  transition: all 0.5s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+#button-search{
+  box-sizing: border-box;
+  background-color: #D6A2E8;
+  padding: 10px ;
+  border-radius: 50%;
+  border: none;
+}
+#search:hover #noidungsearch, #search #noidungsearch:valid{
+  width: 400px ;
+  margin: 0 15px;
+}
+.danhsach{
+  padding-top: 30px;
+}

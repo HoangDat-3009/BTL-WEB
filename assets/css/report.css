@@ -48,3 +48,6 @@
 .page-title {
     color: var(--color_Dark1);
 }
+body{
+    background-color: #d0ddf6;
+}

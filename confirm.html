@@ -57,7 +57,7 @@
         <div class="submenu">
           <a href="#" class="link submenu-title">Đơn hàng</a>
           <a href="./create.html" class="link">Tạo đơn mới</a>
-          <a href="#" class="link">Xác nhận đơn hàng</a>
+          <a href="./confirm.html" class="link">Xác nhận đơn hàng</a>
         </div>
       </li>
 
@@ -73,8 +73,8 @@
         </div>
         <div class="submenu">
           <a href="#" class="link submenu-title">Khách hàng</a>
-          <a href="#" class="link">Danh sách khách hàng</a>
-          <a href="#" class="link">Nhóm khách hàng</a>
+          <a href="./khachhang.html" class="link">Danh sách khách hàng</a>
+          <a href="./khachhang2.html" class="link">Nhóm khách hàng</a>
         </div>
       </li>
 
@@ -107,7 +107,7 @@
         </div>
         <div class="submenu">
           <a href="./report.html" class="link submenu-title">Báo cáo</a>
-          
+
         </div>
       </li>
 
@@ -153,9 +153,9 @@
       <div class="dropdown">
         <button class="btn btn-sm btn-secondary dropdown-toggle btn-profile" type="button" id="dropdownMenuButton1"
           data-bs-toggle="dropdown" aria-expanded="false">
-          
-            <img src="./assets/img/avt.jpg" alt="profile_img">
-            <span>ThuyDuong68</span>
+
+          <img src="./assets/img/avt.jpg" alt="profile_img">
+          <span>ThuyDuong68</span>
         </button>
         <ul class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenuButton1">
           <li class="dropdown-item-text">ThuyDuong68</li>
@@ -167,153 +167,153 @@
 
     <!-- MAIN -->
     <main>
-        
-            <h1 class="text-center text-content">Xác nhận đơn hàng</h1>
-            <div class="table-responsive">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Người gửi</th>
-                            <th>Địa chỉ người gửi</th>
-                            <th>Số điện thoại người gửi</th>
-                            <th>Người nhận</th>
-                            <th>Địa chỉ người nhận</th>
-                            <th>Số điện thoại người nhận</th>
-                            <th>Mô tả</th>
-                            <th>Chờ xác nhận</th>
-                            <th>Ghi chú</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Vương Đức Hùng</td>
-                            <td>44/102 pháo đài láng đống đa hà nội</td>
-                            <td>0383268699</td>
-                            <td>Không có thông tin</td>
-                            <td>Không biết</td>
-                            <td>0123456789</td>
-                            <td>Hàng gia dụng</td>
-                            <td>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
-                                    <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
-                                </div>
-                            </td>
-                            <td>
-                                <textarea name="com" class="note" cols="30" rows="5"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Nguyễn Duy Biền</td>
-                            <td>khum có nhớ</td>
-                            <td>khum có biết</td>
-                            <td>Không có thông tin</td>
-                            <td>Không biết</td>
-                            <td>0123456789</td>
-                            <td>Hàng gia dụng</td>
-                            <td>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
-                                    <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
-                                </div>
-                            </td>
-                            <td>
-                                <textarea name="com" class="note" cols="30" rows="5"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Nguyễn Trần Hải Đăng</td>
-                            <td>hổng nhớ</td>
-                            <td>hổng có biết</td>
-                            <td>Không có thông tin</td>
-                            <td>Không biết</td>
-                            <td>0123456789</td>
-                            <td>Hàng gia dụng</td>
-                            <td>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
-                                    <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
-                                </div>
-                            </td>
-                            <td>
-                                <textarea name="com" class="note" cols="30" rows="5"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Nguyễn Trần Hải Đăng</td>
-                            <td>hổng nhớ</td>
-                            <td>hổng có biết</td>
-                            <td>Không có thông tin</td>
-                            <td>Không biết</td>
-                            <td>0123456789</td>
-                            <td>Hàng gia dụng</td>
-                            <td>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
-                                    <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
-                                </div>
-                            </td>
-                            <td>
-                                <textarea name="com" class="note" cols="30" rows="5"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Nguyễn Trần Hải Đăng</td>
-                            <td>hổng nhớ</td>
-                            <td>hổng có biết</td>
-                            <td>Không có thông tin</td>
-                            <td>Không biết</td>
-                            <td>0123456789</td>
-                            <td>Hàng gia dụng</td>
-                            <td>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
-                                    <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
-                                </div>
-                            </td>
-                            <td>
-                                <textarea name="com" class="note" cols="30" rows="5"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Nguyễn Trần Hải Đăng</td>
-                            <td>hổng nhớ</td>
-                            <td>hổng có biết</td>
-                            <td>Không có thông tin</td>
-                            <td>Không biết</td>
-                            <td>0123456789</td>
-                            <td>Hàng gia dụng</td>
-                            <td>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
-                                    <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
-                                </div>
-                            </td>
-                            <td>
-                                <textarea name="com" class="note" cols="30" rows="5"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Nguyễn Trần Hải Đăng</td>
-                            <td>hổng nhớ</td>
-                            <td>hổng có biết</td>
-                            <td>Không có thông tin</td>
-                            <td>Không biết</td>
-                            <td>0123456789</td>
-                            <td>Hàng gia dụng</td>
-                            <td>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
-                                    <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
-                                </div>
-                            </td>
-                            <td>
-                                <textarea name="com" class="note" cols="30" rows="5"></textarea>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+
+      <h1 class="text-center text-content">Xác nhận đơn hàng</h1>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Người gửi</th>
+              <th>Địa chỉ người gửi</th>
+              <th>Số điện thoại người gửi</th>
+              <th>Người nhận</th>
+              <th>Địa chỉ người nhận</th>
+              <th>Số điện thoại người nhận</th>
+              <th>Mô tả</th>
+              <th>Chờ xác nhận</th>
+              <th>Ghi chú</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vương Đức Hùng</td>
+              <td>44/102 pháo đài láng đống đa hà nội</td>
+              <td>0383268699</td>
+              <td>Không có thông tin</td>
+              <td>Không biết</td>
+              <td>0123456789</td>
+              <td>Hàng gia dụng</td>
+              <td>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
+                  <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
+                </div>
+              </td>
+              <td>
+                <textarea name="com" class="note" cols="30" rows="5"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Nguyễn Duy Biền</td>
+              <td>khum có nhớ</td>
+              <td>khum có biết</td>
+              <td>Không có thông tin</td>
+              <td>Không biết</td>
+              <td>0123456789</td>
+              <td>Hàng gia dụng</td>
+              <td>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
+                  <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
+                </div>
+              </td>
+              <td>
+                <textarea name="com" class="note" cols="30" rows="5"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Nguyễn Trần Hải Đăng</td>
+              <td>hổng nhớ</td>
+              <td>hổng có biết</td>
+              <td>Không có thông tin</td>
+              <td>Không biết</td>
+              <td>0123456789</td>
+              <td>Hàng gia dụng</td>
+              <td>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
+                  <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
+                </div>
+              </td>
+              <td>
+                <textarea name="com" class="note" cols="30" rows="5"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Nguyễn Trần Hải Đăng</td>
+              <td>hổng nhớ</td>
+              <td>hổng có biết</td>
+              <td>Không có thông tin</td>
+              <td>Không biết</td>
+              <td>0123456789</td>
+              <td>Hàng gia dụng</td>
+              <td>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
+                  <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
+                </div>
+              </td>
+              <td>
+                <textarea name="com" class="note" cols="30" rows="5"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Nguyễn Trần Hải Đăng</td>
+              <td>hổng nhớ</td>
+              <td>hổng có biết</td>
+              <td>Không có thông tin</td>
+              <td>Không biết</td>
+              <td>0123456789</td>
+              <td>Hàng gia dụng</td>
+              <td>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
+                  <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
+                </div>
+              </td>
+              <td>
+                <textarea name="com" class="note" cols="30" rows="5"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Nguyễn Trần Hải Đăng</td>
+              <td>hổng nhớ</td>
+              <td>hổng có biết</td>
+              <td>Không có thông tin</td>
+              <td>Không biết</td>
+              <td>0123456789</td>
+              <td>Hàng gia dụng</td>
+              <td>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
+                  <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
+                </div>
+              </td>
+              <td>
+                <textarea name="com" class="note" cols="30" rows="5"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Nguyễn Trần Hải Đăng</td>
+              <td>hổng nhớ</td>
+              <td>hổng có biết</td>
+              <td>Không có thông tin</td>
+              <td>Không biết</td>
+              <td>0123456789</td>
+              <td>Hàng gia dụng</td>
+              <td>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-confirm" onclick="confirmOrder(this)">Xác nhận</button>
+                  <button type="button" class="btn btn-cancel" onclick="cancelOrder(this)">Huỷ</button>
+                </div>
+              </td>
+              <td>
+                <textarea name="com" class="note" cols="30" rows="5"></textarea>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
     <!-- MAIN -->
   </section>
